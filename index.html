@@ -1,60 +1,264 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="id">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Materi Matematika Umum kelas XII SMA/MA Kurikulum Merdeka revisi 2025. Empat bab, 26 subbab, 52 materi, penjelasan sederhana, contoh soal, kuis C2, dan proyek PjBL.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+    content="Materi Matematika Umum Kelas XII SMA/MA Kurikulum Merdeka 2025. Empat bab, 26 subbab, 52 materi, contoh soal, latihan C2, dan proyek PjBL.">
+
   <meta name="theme-color" content="#103f32">
   <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Matematika Umum Kelas XII — Pendamping Akademik">
-  <meta property="og:description" content="Belajar dari nol: Barisan dan Deret, Investasi dan Pinjaman, Kaidah Pencacahan, Peluang.">
-  <title>Matematika Umum Kelas XII SMA/MA | Pendamping Akademik</title>
+
+  <meta property="og:title"
+    content="Matematika Umum Kelas XII | Pendamping Akademik">
+
+  <meta property="og:description"
+    content="Belajar Barisan dan Deret, Investasi dan Pinjaman, Kaidah Pencacahan, serta Peluang.">
+
+  <title>
+    Matematika Umum Kelas XII SMA/MA | Pendamping Akademik
+  </title>
+
   <link rel="stylesheet" href="style.css">
-  <script defer src="materi.js"></script>
-  <script defer src="app.js"></script>
+
+  <script src="materi.js" defer></script>
+  <script src="app.js" defer></script>
 </head>
+
 <body>
-  <a class="skip" href="#konten">Langsung ke materi</a>
+
+  <a class="skip" href="#konten">
+    Langsung ke materi
+  </a>
+
   <header class="topbar">
     <div class="top-inner">
-      <div class="brand"><span class="brand-mark" aria-hidden="true">PA</span><span><strong>PENDAMPING AKADEMIK</strong><small>SOLUSI BELAJAR MANDIRI TERPADU</small></span></div>
-      <a class="top-link" href="#beranda">Daftar isi</a>
+
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          PA
+        </span>
+
+        <span>
+          <strong>PENDAMPING AKADEMIK</strong>
+          <small>SOLUSI BELAJAR MANDIRI TERPADU</small>
+        </span>
+      </div>
+
+      <a class="top-link" href="#beranda">
+        Daftar Isi
+      </a>
+
     </div>
   </header>
+
   <div class="shell">
+
     <section class="intro" aria-labelledby="headline">
-      <div class="intro-copy"><p class="eyebrow">KURIKULUM MERDEKA • FASE F • 2026/2027</p>
-      <h1 id="headline">Matematika Umum <span>Kelas XII SMA/MA</span></h1>
-      <p>Pelajari matematika dengan bahasa yang mudah dimengerti, bahkan jika kamu sedang mengulang dari awal. Setiap rumus diterangkan lewat cerita, contoh, dan latihan singkat.</p>
-      <div class="intro-tags"><span>4 bab inti</span><span>26 subbab</span><span>52 materi</span><span>Mulai Bloom C2</span></div>
+
+      <div class="intro-copy">
+
+        <p class="eyebrow">
+          KURIKULUM MERDEKA | FASE F | 2026/2027
+        </p>
+
+        <h1 id="headline">
+          Matematika Umum
+          <span>Kelas XII SMA/MA</span>
+        </h1>
+
+        <p>
+          Pelajari matematika dengan bahasa yang sederhana
+          dan mudah dimengerti.
+
+          Setiap konsep dan rumus dijelaskan melalui contoh
+          kehidupan sehari-hari, langkah perhitungan,
+          dan latihan pemahaman.
+        </p>
+
+        <div class="intro-tags">
+          <span>4 Bab Inti</span>
+          <span>26 Subbab</span>
+          <span>52 Materi</span>
+          <span>Taksonomi Bloom C2</span>
+        </div>
+
       </div>
-      <img class="intro-photo" src="https://images.unsplash.com/photo-1707902665498-a202981fb5ac?auto=format&fit=crop&w=1100&q=82" loading="lazy" alt="Foto nyata meja belajar dengan catatan, pensil, dan peralatan perhitungan" onerror="this.style.display='none'">
+
+      <img
+        class="intro-photo"
+        src="https://images.unsplash.com/photo-1707902665498-a202981fb5ac?auto=format&amp;fit=crop&amp;w=1100&amp;q=82"
+        loading="lazy"
+        alt="Foto meja belajar dengan catatan dan peralatan matematika"
+        onerror="this.style.display='none'">
+
     </section>
-    <section class="utility" aria-label="Navigasi dan kemajuan">
-      <div class="utility-left"><button class="btn btn-ghost" id="homeBtn" type="button">Daftar isi utama</button><button class="btn btn-ghost" id="resumeBtn" type="button">Lanjutkan terakhir dibaca</button></div>
-      <div class="progress-box"><span id="progressText">0 dari 52 materi selesai</span><div class="progress-track" role="progressbar" aria-label="Kemajuan belajar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progressTrack"><div class="progress-fill" id="progressFill"></div></div></div>
+
+    <section class="utility" aria-label="Navigasi dan kemajuan belajar">
+
+      <div class="utility-left">
+
+        <button
+          class="btn btn-ghost"
+          id="homeBtn"
+          type="button">
+          Daftar Isi Utama
+        </button>
+
+        <button
+          class="btn btn-ghost"
+          id="resumeBtn"
+          type="button">
+          Lanjutkan Bacaan Terakhir
+        </button>
+
+      </div>
+
+      <div class="progress-box">
+
+        <span id="progressText">
+          0 dari 52 materi selesai
+        </span>
+
+        <div
+          class="progress-track"
+          id="progressTrack"
+          role="progressbar"
+          aria-label="Kemajuan belajar"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          aria-valuenow="0">
+
+          <div
+            class="progress-fill"
+            id="progressFill">
+          </div>
+
+        </div>
+
+      </div>
+
     </section>
+
     <div class="workspace">
-      <aside class="sidebar" aria-label="Daftar isi">
-        <div class="sidebar-title"><strong>DAFTAR ISI</strong><button type="button" class="btn-mini" id="sidebarClose">Tutup</button></div>
-        <label class="search-label" for="searchInput">Cari materi atau kata kunci</label>
-        <input id="searchInput" class="search" type="search" placeholder="Contoh: bunga majemuk" autocomplete="off">
-        <p id="searchCount" class="search-count" aria-live="polite"></p>
-        <nav id="toc" class="toc" aria-label="Bab, subbab, dan materi"></nav>
+
+      <aside class="sidebar" aria-label="Daftar isi pembelajaran">
+
+        <div class="sidebar-title">
+
+          <strong>DAFTAR ISI</strong>
+
+          <button
+            type="button"
+            class="btn-mini"
+            id="sidebarClose">
+            Tutup
+          </button>
+
+        </div>
+
+        <label
+          class="search-label"
+          for="searchInput">
+          Cari materi atau kata kunci
+        </label>
+
+        <input
+          id="searchInput"
+          class="search"
+          type="search"
+          placeholder="Contoh: bunga majemuk"
+          autocomplete="off">
+
+        <p
+          id="searchCount"
+          class="search-count"
+          aria-live="polite">
+        </p>
+
+        <nav
+          id="toc"
+          class="toc"
+          aria-label="Bab, subbab, dan materi">
+        </nav>
+
       </aside>
-      <main class="main" id="konten" tabindex="-1">
-        <button class="mobile-toc" id="sidebarOpen" type="button">Buka daftar isi semua bab</button>
-        <div id="page" aria-live="polite"><p>Memuat materi pembelajaran…</p></div>
+
+      <main
+        class="main"
+        id="konten"
+        tabindex="-1">
+
+        <button
+          class="mobile-toc"
+          id="sidebarOpen"
+          type="button">
+          Buka Daftar Isi Semua Bab
+        </button>
+
+        <div
+          id="page"
+          aria-live="polite">
+
+          <p>
+            Memuat materi pembelajaran...
+          </p>
+
+        </div>
+
         <footer class="site-footer">
-          <p><strong>Pendamping Akademik</strong> · Materi pembelajaran mandiri Matematika Umum XII.</p>
-          <p>Penjelasan, contoh, dan soal dibuat sebagai materi pengembangan orisinal yang merujuk buku pemerintah. Bukan salinan utuh buku.</p>
-          <details><summary>Referensi pembelajaran dan kredit foto</summary><div id="sources"></div></details>
-          <p class="footnote">Kemajuan hanya tersimpan di peramban/perangkat yang digunakan (localStorage). Tidak dikirim ke server.</p>
+
+          <p>
+            <strong>Pendamping Akademik</strong>
+            - Materi Pembelajaran Mandiri
+            Matematika Umum Kelas XII SMA/MA.
+          </p>
+
+          <p>
+            Materi, contoh, dan soal merupakan
+            pengembangan pembelajaran orisinal
+            dengan mengacu pada buku pemerintah
+            dan Kurikulum Merdeka.
+          </p>
+
+          <details>
+
+            <summary>
+              Referensi Pembelajaran dan Kredit Foto
+            </summary>
+
+            <div id="sources"></div>
+
+          </details>
+
+          <p class="footnote">
+            Kemajuan belajar disimpan pada browser
+            dan perangkat yang digunakan melalui
+            penyimpanan lokal.
+          </p>
+
         </footer>
+
       </main>
+
     </div>
+
   </div>
-  <div id="sidebarBackdrop" class="backdrop" hidden></div>
-  <noscript>Aktifkan JavaScript agar daftar isi, pembahasan, dan navigasi materi tampil. Data materi tersedia di file materi.json pada repositori ini.</noscript>
+
+  <div
+    id="sidebarBackdrop"
+    class="backdrop"
+    hidden>
+  </div>
+
+  <noscript>
+    Aktifkan JavaScript pada browser agar
+    daftar isi, materi, dan navigasi pembelajaran
+    dapat digunakan.
+  </noscript>
+
 </body>
 </html>
