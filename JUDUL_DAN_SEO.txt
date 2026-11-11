@@ -1,0 +1,14 @@
+JUDUL HALAMAN BLOGGER:
+Matematika Umum Kelas XII SMA/MA | Materi Lengkap Kurikulum Merdeka
+
+DESKRIPSI PENELUSURAN (META DESCRIPTION):
+Belajar Matematika Umum kelas XII SMA/MA Kurikulum Merdeka: Barisan dan Deret, Investasi dan Pinjaman, Kaidah Pencacahan, dan Peluang. Contoh langkah demi langkah, latihan C2, dan proyek PjBL.
+
+SLUG/URL HALAMAN:
+Tentukan melalui Blogger. Contoh jika tersedia: /p/matematika-umum-kelas-xii.html
+
+ALAMAT GITHUB PAGES (SETELAH REPO DAN PAGES DIAKTIFKAN):
+https://asyiknyabelajar.github.io/matematika-umum-xii/
+
+NAMA REPOSITORY YANG DISARANKAN:
+matematika-umum-xii

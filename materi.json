@@ -1,0 +1,2089 @@
+{
+  "title": "Matematika Umum Kelas XII SMA/MA — Pendamping Akademik",
+  "edition": "Edisi Pembelajaran 2026/2027",
+  "chapters": [
+    {
+      "title": "Barisan dan Deret",
+      "overview": "Pernah melihat kursi yang berbaris rapi, tabungan yang terus bertambah, atau benda yang jumlahnya berlipat? Semua dapat dijelaskan dengan pola bilangan.",
+      "essential": "Membedakan barisan (daftar bilangan) dengan deret (jumlah bilangan), mengenali beda atau rasio, lalu memakai rumus hanya setelah memahami polanya.",
+      "project": "Proyek 1 · Rencana menabung untuk kegiatan kelas",
+      "project_steps": [
+        "Pilih target dana, misalnya Rp600.000 dalam 12 minggu.",
+        "Buat skenario setoran tetap dan setoran bertambah Rp2.000 setiap minggu.",
+        "Tulis tabel setoran dan total tabungan; cocokkan hasil dengan rumus deret.",
+        "Presentasikan pilihan yang paling realistis disertai alasan dan batasan."
+      ],
+      "image": "https://images.unsplash.com/photo-1518336751805-17d4ea1ba5a0?auto=format&fit=crop&w=1400&q=82",
+      "credit": "Foto CHUTTERSNAP / Unsplash",
+      "sections": [
+        {
+          "title": "Pengenalan Pola Bilangan dan Barisan",
+          "goal": "Mengenali keteraturan sebelum memakai simbol atau rumus.",
+          "c4": "Dua barisan berawal dari 2, 4, 6. Barisan A meneruskan +2, barisan B meneruskan +2 lalu berubah menjadi ×2. Mengapa tiga suku saja belum cukup menentukan satu aturan secara pasti?",
+          "lessons": [
+            {
+              "title": "Konsep dasar pola bilangan",
+              "subtopics": [
+                "pola naik, turun, dan berulang",
+                "selisih antarsuku",
+                "aturan pembentuk",
+                "representasi dengan benda"
+              ],
+              "explain": "Pola adalah susunan yang mengikuti aturan. Pola tidak selalu bertambah: bisa berkurang, berulang, atau berganti aturan. Saat melihat 3, 6, 9, 12, jangan langsung menghafal rumus. Pertama-tama bandingkan dua bilangan yang berdekatan. Setiap suku bertambah tiga.",
+              "analogy": "Bayangkan rak perpustakaan: rak pertama berisi 3 buku, rak kedua 6 buku, rak ketiga 9 buku. Kamu bisa memprediksi rak keempat tanpa menghitung dari awal.",
+              "formula": "Jika selisih selalu sama, pola itu bersifat aritmetika.",
+              "example": {
+                "problem": "Lanjutkan pola 4, 7, 10, 13, ... sebanyak dua suku.",
+                "steps": [
+                  "Periksa 7 − 4 = 3, 10 − 7 = 3, dan 13 − 10 = 3",
+                  "Aturannya adalah menambah 3 setiap langkah",
+                  "Suku berikutnya 13 + 3 = 16, lalu 16 + 3 = 19."
+                ],
+                "answer": "16 dan 19"
+              },
+              "check": {
+                "question": "Apa aturan paling sederhana untuk 8, 13, 18, 23, ...?",
+                "options": [
+                  "Tambah 5",
+                  "Kali 5",
+                  "Kurang 5"
+                ],
+                "correct": 0,
+                "feedback": "Setiap bilangan naik tepat 5."
+              },
+              "trap": "Satu deret angka kadang dapat dibuat dari banyak aturan. Selalu nyatakan aturan yang dipakai.",
+              "id": "1-1-1",
+              "code": "1.1.1"
+            },
+            {
+              "title": "Konsep barisan bilangan",
+              "subtopics": [
+                "pengertian suku",
+                "nomor urut",
+                "notasi Uₙ",
+                "menebak suku berikut"
+              ],
+              "explain": "Barisan adalah daftar bilangan yang ditulis menurut urutannya. Angka pertama disebut suku pertama (U₁); angka kedua suku kedua (U₂). Simbol Uₙ berarti nilai suku pada urutan ke-n. Huruf n bukan nilai suku, melainkan nomor posisinya.",
+              "analogy": "Seperti nomor kursi bioskop: kursi ke-5 berbeda dengan jumlah seluruh kursi. Nomor urut bukan nilai isi.",
+              "formula": "U₁ = suku pertama; U₂ = suku kedua; Uₙ = suku ke-n.",
+              "example": {
+                "problem": "Pada barisan 5, 10, 15, 20, ..., berapa U₃ dan U₅?",
+                "steps": [
+                  "U₃ adalah bilangan di urutan ketiga, yaitu 15",
+                  "Setiap suku naik 5",
+                  "U₅ = 20 + 5 = 25."
+                ],
+                "answer": "U₃ = 15 dan U₅ = 25"
+              },
+              "check": {
+                "question": "Apa arti U₄?",
+                "options": [
+                  "Jumlah empat suku",
+                  "Nilai suku keempat",
+                  "Empat kali suku pertama"
+                ],
+                "correct": 1,
+                "feedback": "U₄ menunjuk satu suku, yaitu yang menempati posisi keempat."
+              },
+              "trap": "Jangan tertukar antara nomor urut n dan nilai suku Uₙ.",
+              "id": "1-1-2",
+              "code": "1.1.2"
+            }
+          ],
+          "id": "1-1"
+        },
+        {
+          "title": "Barisan Aritmetika",
+          "goal": "Menemukan beda tetap dan menghitung suku tertentu.",
+          "c4": "Siswa A menabung Rp10.000 lalu menaikkan setoran Rp2.000 tiap minggu. Siswa B selalu menyetor Rp20.000. Bandingkan setoran pada minggu ke-8 dan jelaskan apakah jumlah tabungan mereka juga lebih besar pada minggu itu.",
+          "lessons": [
+            {
+              "title": "Konsep barisan aritmetika",
+              "subtopics": [
+                "beda tetap b",
+                "suku pertama a",
+                "barisan naik atau turun",
+                "rumus suku ke-n"
+              ],
+              "explain": "Barisan aritmetika memiliki selisih yang sama antara dua suku berurutan. Selisih ini disebut beda (b). Suku pertama disebut a. Untuk mencari suku ke-n, kamu tidak perlu menulis semua suku: cukup dari a melangkah sebanyak n − 1 kali, masing-masing sebesar b.",
+              "analogy": "Naik tangga dengan tinggi anak tangga sama: dari anak tangga pertama ke kelima ada empat perpindahan, bukan lima.",
+              "formula": "Uₙ = a + (n − 1)b; b = U₂ − U₁.",
+              "example": {
+                "problem": "Tentukan U₈ dari 7, 11, 15, 19, ...",
+                "steps": [
+                  "Suku pertama a = 7",
+                  "Beda b = 11 − 7 = 4",
+                  "U₈ = 7 + (8 − 1) × 4 = 7 + 28 = 35."
+                ],
+                "answer": "U₈ = 35"
+              },
+              "check": {
+                "question": "Barisan 20, 16, 12, 8 memiliki beda ...",
+                "options": [
+                  "4",
+                  "−4",
+                  "−8"
+                ],
+                "correct": 1,
+                "feedback": "Beda = 16 − 20 = −4; tanda minus berarti menurun."
+              },
+              "trap": "Kesalahan umum: menghitung n kali beda, padahal dari suku pertama ada n−1 langkah.",
+              "id": "1-2-1",
+              "code": "1.2.1"
+            },
+            {
+              "title": "Penerapan barisan aritmetika",
+              "subtopics": [
+                "menentukan a dan b",
+                "menyisipkan suku",
+                "model biaya atau jumlah",
+                "menjelaskan satuan"
+              ],
+              "explain": "Masalah cerita akan lebih mudah jika kita menentukan tiga hal: suku pertama, beda setiap periode, dan nomor periode yang ditanyakan. Pastikan satuan waktu konsisten, misalnya semuanya dalam minggu.",
+              "analogy": "Pada barisan lampu jalan, lampu pertama berjarak 2 m dari titik awal lalu setiap lampu berikutnya berjarak 5 m dari lampu sebelumnya.",
+              "formula": "Uₙ = a + (n − 1)b.",
+              "example": {
+                "problem": "Setoran minggu pertama Rp8.000 dan bertambah Rp3.000 tiap minggu. Berapa setoran minggu ke-6?",
+                "steps": [
+                  "a = Rp8.000",
+                  " b = Rp3.000 tiap minggu",
+                  " n = 6",
+                  "U₆ = 8.000 + (6 − 1) × 3.000 = 23.000."
+                ],
+                "answer": "Rp23.000"
+              },
+              "check": {
+                "question": "Jika suku pertama 9 dan beda 2, U₄ adalah ...",
+                "options": [
+                  "15",
+                  "17",
+                  "18"
+                ],
+                "correct": 0,
+                "feedback": "U₄ = 9 + (4−1)×2 = 15."
+              },
+              "trap": "Setoran pada minggu ke-6 berbeda dengan total seluruh setoran dari minggu pertama sampai keenam.",
+              "id": "1-2-2",
+              "code": "1.2.2"
+            }
+          ],
+          "id": "1-2"
+        },
+        {
+          "title": "Barisan Geometri",
+          "goal": "Menemukan rasio dan membedakan pertumbuhan tetap dari pelipatan.",
+          "c4": "Bandingkan barisan 5, 10, 15, 20 dan 5, 10, 20, 40. Mana yang paling cepat membesar dan mengapa?",
+          "lessons": [
+            {
+              "title": "Konsep barisan geometri",
+              "subtopics": [
+                "rasio tetap r",
+                "pangkat sebagai pengulangan kali",
+                "rumus suku ke-n",
+                "geometri bertambah atau menyusut"
+              ],
+              "explain": "Berbeda dengan aritmetika yang menambah jumlah tetap, barisan geometri mengalikan setiap suku dengan angka yang sama. Angka pengali itu disebut rasio (r). Rasio 2 berarti setiap langkah menjadi dua kali, sedangkan rasio 1/2 berarti setiap langkah menjadi setengahnya.",
+              "analogy": "Bayangkan kertas yang dilipat menjadi dua: jumlah lapisan menjadi 1, 2, 4, 8, dan seterusnya.",
+              "formula": "Uₙ = a × r^(n−1); r = U₂ ÷ U₁ (jika U₁ ≠ 0).",
+              "example": {
+                "problem": "Tentukan suku ke-5 dari 3, 6, 12, 24, ...",
+                "steps": [
+                  "a = 3",
+                  " r = 6 ÷ 3 = 2",
+                  "U₅ = 3 × 2^(5−1) = 3 × 16 = 48."
+                ],
+                "answer": "U₅ = 48"
+              },
+              "check": {
+                "question": "Rasio barisan 81, 27, 9, 3 adalah ...",
+                "options": [
+                  "3",
+                  "1/3",
+                  "−3"
+                ],
+                "correct": 1,
+                "feedback": "27 ÷ 81 = 1/3, sehingga setiap suku menjadi sepertiga."
+              },
+              "trap": "Beda (pengurangan) dan rasio (pembagian) adalah dua hal berbeda.",
+              "id": "1-3-1",
+              "code": "1.3.1"
+            },
+            {
+              "title": "Penerapan barisan geometri",
+              "subtopics": [
+                "menentukan r",
+                "pelipatan berulang",
+                "penyusutan berulang",
+                "memeriksa kewajaran hasil"
+              ],
+              "explain": "Bila sebuah jumlah berubah dengan persentase yang sama setiap periode, bentuknya sering berupa barisan geometri. Kenaikan 10% berarti dikali 1,10; penyusutan 20% berarti dikali 0,80. Persentase tidak ditambahkan begitu saja ke jumlah awal pada setiap tahap.",
+              "analogy": "Sejumlah sel membelah menjadi dua dalam periode tetap sehingga banyak sel mengikuti 2, 4, 8, 16, ....",
+              "formula": "Jumlah setelah n perubahan = jumlah awal × (faktor)^n.",
+              "example": {
+                "problem": "Sebuah populasi awal 100 dan tumbuh 20% per tahun. Berapa setelah dua tahun?",
+                "steps": [
+                  "Faktor pertumbuhan = 1 + 20/100 = 1,2",
+                  "Tahun pertama 100 × 1,2 = 120",
+                  "Tahun kedua 120 × 1,2 = 144."
+                ],
+                "answer": "144"
+              },
+              "check": {
+                "question": "Jumlah 200 menyusut 10% setiap periode. Faktor pengalinya ...",
+                "options": [
+                  "0,10",
+                  "0,90",
+                  "1,10"
+                ],
+                "correct": 1,
+                "feedback": "Sisa setelah turun 10% adalah 90% = 0,90 dari nilai sebelumnya."
+              },
+              "trap": "Pertumbuhan 20% dua kali bukan 40% dari nilai awal, melainkan 44% karena periode kedua memakai dasar baru.",
+              "id": "1-3-2",
+              "code": "1.3.2"
+            }
+          ],
+          "id": "1-3"
+        },
+        {
+          "title": "Deret Aritmetika",
+          "goal": "Memahami jumlah beberapa suku yang berbeda tetap.",
+          "c4": "Seseorang menabung Rp5.000 pada minggu pertama, naik Rp2.000 tiap minggu selama 10 minggu. Apakah cukup menghitung setoran minggu ke-10 untuk mengetahui total tabungan? Jelaskan.",
+          "lessons": [
+            {
+              "title": "Konsep deret aritmetika",
+              "subtopics": [
+                "deret versus barisan",
+                "jumlah Sₙ",
+                "pasangan suku",
+                "rumus jumlah"
+              ],
+              "explain": "Barisan menuliskan angka satu demi satu. Deret menjumlahkannya. Misalnya barisan 2, 4, 6, 8; deretnya 2 + 4 + 6 + 8 = 20. Untuk barisan aritmetika, jumlah bisa dihitung dengan memasangkan suku pertama dan terakhir.",
+              "analogy": "Seperti membayar iuran berbeda setiap minggu: untuk tahu jumlah uang terkumpul, seluruh iuran harus ditambahkan.",
+              "formula": "Sₙ = n(a + Uₙ)/2 = n[2a + (n−1)b]/2.",
+              "example": {
+                "problem": "Hitung 3 + 7 + 11 + 15 + 19.",
+                "steps": [
+                  "Ada n = 5 suku",
+                  "Suku pertama 3 dan suku terakhir 19",
+                  "S₅ = 5 × (3 + 19) / 2 = 55."
+                ],
+                "answer": "55"
+              },
+              "check": {
+                "question": "Apakah S₄ untuk barisan 2, 4, 6, 8?",
+                "options": [
+                  "8",
+                  "16",
+                  "20"
+                ],
+                "correct": 2,
+                "feedback": "S₄ adalah 2+4+6+8 = 20, bukan suku keempat."
+              },
+              "trap": "Uₙ adalah satu suku; Sₙ adalah total n suku pertama.",
+              "id": "1-4-1",
+              "code": "1.4.1"
+            },
+            {
+              "title": "Penerapan deret aritmetika",
+              "subtopics": [
+                "akumulasi tabungan",
+                "penjumlahan objek berpola",
+                "mencari banyak suku",
+                "menafsirkan hasil"
+              ],
+              "explain": "Saat soal berbunyi “jumlah seluruh”, “total”, atau “akumulasi”, besar kemungkinan kita perlu deret, bukan hanya suku terakhir. Tentukan banyak periode yang dihitung dan pastikan tidak ada periode terlewat.",
+              "analogy": "Menata kursi dengan 8 kursi pada baris pertama, 10 pada baris kedua, dan seterusnya: total kursi adalah jumlah seluruh baris.",
+              "formula": "Sₙ = n[2a + (n−1)b]/2.",
+              "example": {
+                "problem": "Sebuah aula memiliki 4 baris kursi: 8, 10, 12, 14 kursi. Berapa semua kursi?",
+                "steps": [
+                  "a = 8, b = 2, n = 4",
+                  "S₄ = 4 × [2(8)+3(2)]/2",
+                  "S₄ = 2 × (16 + 6) = 44 kursi."
+                ],
+                "answer": "44 kursi"
+              },
+              "check": {
+                "question": "Jumlah 5 + 8 + 11 + 14 adalah ...",
+                "options": [
+                  "38",
+                  "30",
+                  "14"
+                ],
+                "correct": 0,
+                "feedback": "5+8+11+14 = 38."
+              },
+              "trap": "Bila sedang menghitung total, jangan berhenti pada Uₙ.",
+              "id": "1-4-2",
+              "code": "1.4.2"
+            }
+          ],
+          "id": "1-4"
+        },
+        {
+          "title": "Deret Geometri",
+          "goal": "Menghitung total pertumbuhan yang berlipat, termasuk deret tak hingga yang konvergen.",
+          "c4": "Bola memantul setengah tinggi sebelumnya. Mengapa jumlah seluruh jarak pantulan bisa mendekati nilai tetap meskipun jumlah pantulannya sangat banyak?",
+          "lessons": [
+            {
+              "title": "Deret geometri berhingga",
+              "subtopics": [
+                "jumlah suku dengan rasio",
+                "sifat rasio",
+                "rumus Sₙ",
+                "kasus r=1"
+              ],
+              "explain": "Deret geometri adalah penjumlahan suku-suku yang diperoleh dari pengalian rasio tetap. Misalnya 2 + 4 + 8 + 16 = 30. Rumusnya membantu saat banyak suku sangat besar. Jika r=1, semua suku sama sehingga cukup n×a.",
+              "analogy": "Bayangkan jumlah hadiah yang berlipat dua setiap tahap: tahap kedua 2 kali pertama, tahap ketiga 2 kali kedua.",
+              "formula": "Sₙ = a(1−r^n)/(1−r) untuk r ≠ 1; jika r=1 maka Sₙ=na.",
+              "example": {
+                "problem": "Hitung total 3 + 6 + 12 + 24.",
+                "steps": [
+                  "a = 3, r = 2, n = 4",
+                  "S₄ = 3(1−2⁴)/(1−2)",
+                  "S₄ = 3(−15)/(−1) = 45."
+                ],
+                "answer": "45"
+              },
+              "check": {
+                "question": "Jumlah 2 + 6 + 18 adalah ...",
+                "options": [
+                  "26",
+                  "24",
+                  "18"
+                ],
+                "correct": 0,
+                "feedback": "Jumlah ketiga suku ialah 2+6+18 = 26."
+              },
+              "trap": "Saat r>1, bentuk 1−r^n dan 1−r sama-sama negatif; hasil jumlah tetap positif.",
+              "id": "1-5-1",
+              "code": "1.5.1"
+            },
+            {
+              "title": "Deret geometri tak hingga",
+              "subtopics": [
+                "makna mendekati batas",
+                "syarat |r|<1",
+                "rumus S∞",
+                "contoh pembagian berulang"
+              ],
+              "explain": "Tak hingga artinya proses penjumlahan dapat berlanjut tanpa batas. Namun, jika setiap suku makin kecil cukup cepat, totalnya justru mendekati bilangan tetap. Kondisi ini terjadi untuk deret geometri dengan −1 < r < 1.",
+              "analogy": "Potong sepotong pita: ambil setengah, lalu seperempat, lalu seperdelapan. Jumlah panjang yang diambil makin dekat ke satu pita utuh.",
+              "formula": "S∞ = a/(1−r), hanya jika |r| < 1.",
+              "example": {
+                "problem": "Tentukan 8 + 4 + 2 + 1 + 1/2 + ...",
+                "steps": [
+                  "a = 8 dan r = 4 ÷ 8 = 1/2",
+                  "Karena |r| = 1/2 < 1, deret memiliki jumlah terbatas",
+                  "S∞ = 8/(1−1/2) = 16."
+                ],
+                "answer": "16"
+              },
+              "check": {
+                "question": "Deret 5 + 10 + 20 + ... memiliki jumlah tak hingga yang terbatas?",
+                "options": [
+                  "Ya, karena sukunya bertambah",
+                  "Tidak, karena |r| = 2",
+                  "Ya, karena suku awalnya 5"
+                ],
+                "correct": 1,
+                "feedback": "Rasio 2 tidak memenuhi |r|<1 sehingga jumlahnya membesar tanpa batas."
+              },
+              "trap": "Simbol tak hingga bukan angka yang bisa langsung dimasukkan sebagai n dalam rumus biasa.",
+              "id": "1-5-2",
+              "code": "1.5.2"
+            }
+          ],
+          "id": "1-5"
+        },
+        {
+          "title": "Bunga Tunggal sebagai Penerapan",
+          "goal": "Menghubungkan perubahan tetap dengan keuangan dasar.",
+          "c4": "Apakah bunga tunggal 2% per bulan selama 6 bulan sama hasilnya dengan bunga majemuk 2% per bulan? Jelaskan penyebab perbedaan.",
+          "lessons": [
+            {
+              "title": "Dasar matematika bunga tunggal",
+              "subtopics": [
+                "modal awal",
+                "tingkat bunga per periode",
+                "lama waktu",
+                "bunga tetap per periode"
+              ],
+              "explain": "Bunga tunggal dihitung selalu dari modal atau pokok awal yang sama. Karena dasar perhitungannya tidak berubah, nilai bunga per periode juga tetap. Ini mirip barisan aritmetika: saldo bertambah dengan beda yang sama.",
+              "analogy": "Meminjam Rp100.000 dengan bunga tunggal 1% per bulan berarti bunga per bulan Rp1.000 dari pokok awal, bukan dari saldo bulan sebelumnya.",
+              "formula": "Bunga I = P × i × n; nilai akhir A = P + I = P(1+in).",
+              "example": {
+                "problem": "Modal Rp500.000 mendapat bunga tunggal 2% per bulan selama 3 bulan. Berapa bunga total?",
+                "steps": [
+                  "P = 500.000, i = 2/100 = 0,02, n = 3",
+                  "Bunga per bulan = 500.000 × 0,02 = 10.000",
+                  "Total bunga = 10.000 × 3 = Rp30.000."
+                ],
+                "answer": "Rp30.000"
+              },
+              "check": {
+                "question": "Bunga tunggal dihitung dari ...",
+                "options": [
+                  "Saldo terus berubah",
+                  "Modal awal",
+                  "Jumlah seluruh bunga masa depan"
+                ],
+                "correct": 1,
+                "feedback": "Pada bunga tunggal, dasar penghitungan adalah pokok awal."
+              },
+              "trap": "Pastikan bunga per bulan dipasangkan dengan waktu dalam bulan; bunga per tahun dengan waktu dalam tahun.",
+              "id": "1-6-1",
+              "code": "1.6.1"
+            },
+            {
+              "title": "Penyelesaian masalah bunga tunggal",
+              "subtopics": [
+                "nilai akhir",
+                "menentukan lama waktu",
+                "menentukan tingkat bunga",
+                "perbandingan kasus"
+              ],
+              "explain": "Soal bunga tunggal sering menanyakan salah satu dari empat informasi: modal, tingkat bunga, waktu, atau nilai akhir. Tulis yang diketahui dahulu lalu pindahkan unsur persamaan secara bertahap.",
+              "analogy": "Jika uang di tabungan bertambah Rp10.000 setiap bulan, totalnya naik teratur walaupun lamanya terus bertambah.",
+              "formula": "A = P(1+in), dengan i ditulis sebagai desimal.",
+              "example": {
+                "problem": "Uang Rp400.000 berbunga tunggal 1% per bulan selama 5 bulan. Tentukan saldo akhirnya.",
+                "steps": [
+                  "i = 0,01 dan n = 5",
+                  "Bunga total = 400.000 × 0,01 × 5 = 20.000",
+                  "Saldo akhir = 400.000 + 20.000 = Rp420.000."
+                ],
+                "answer": "Rp420.000"
+              },
+              "check": {
+                "question": "Saldo akhir dari modal Rp100.000 dengan bunga tunggal 10% untuk satu periode?",
+                "options": [
+                  "Rp110.000",
+                  "Rp101.000",
+                  "Rp200.000"
+                ],
+                "correct": 0,
+                "feedback": "10% × 100.000 = 10.000, jadi total 110.000."
+              },
+              "trap": "Nilai akhir adalah modal ditambah bunga; bukan hanya besarnya bunga.",
+              "id": "1-6-2",
+              "code": "1.6.2"
+            }
+          ],
+          "id": "1-6"
+        }
+      ],
+      "id": "bab-1"
+    },
+    {
+      "title": "Investasi dan Pinjaman",
+      "overview": "Mengapa dua tawaran tabungan dengan persentase bunga sama bisa memberikan hasil berbeda? Mengapa cicilan tetap tetap memiliki bagian bunga dan pokok yang berubah?",
+      "essential": "Mengenali uang awal, persentase per periode, waktu, dan arus kas. Seluruh contoh merupakan simulasi pembelajaran, bukan ajakan membeli produk keuangan.",
+      "project": "Proyek 2 · Membandingkan tabungan dan biaya cicilan",
+      "project_steps": [
+        "Gunakan data hipotetis: tabungan awal Rp1.000.000, tingkat bunga 1% per bulan selama 12 bulan.",
+        "Bandingkan bunga tunggal dan majemuk serta hitung selisihnya.",
+        "Buat satu skenario cicilan anuitas dengan tabel saldo, bunga, dan pelunasan pokok.",
+        "Tulis keputusan berdasarkan total biaya/manfaat dan sebutkan asumsi model."
+      ],
+      "image": "https://images.unsplash.com/photo-1707902665498-a202981fb5ac?auto=format&fit=crop&w=1400&q=82",
+      "credit": "Foto Jakub Żerdzicki / Unsplash",
+      "sections": [
+        {
+          "title": "Konsep Suku Bunga Tunggal",
+          "goal": "Memahami bahasa keuangan paling dasar sebagai prasyarat.",
+          "c4": "Bank A menawarkan bunga tunggal 12% per tahun, bank B 1% per bulan. Apakah kedua bunga setara jika tidak ada pemajemukan? Jelaskan satuan waktunya.",
+          "lessons": [
+            {
+              "title": "Dasar suku bunga",
+              "subtopics": [
+                "arti persentase",
+                "tingkat bunga dan periode",
+                "pokok P",
+                "perbedaan bunga dan saldo"
+              ],
+              "explain": "Persentase berarti “per seratus”. Bunga 5% berarti setiap Rp100 dari pokok menghasilkan Rp5 bunga untuk periode yang disebutkan. Periode sangat penting: 5% per bulan tidak sama dengan 5% per tahun.",
+              "analogy": "Label harga diskon 10% memberi gambaran bahwa persentase perlu dikalikan dengan angka acuan.",
+              "formula": "5% = 5/100 = 0,05; I = P × i × n untuk bunga tunggal.",
+              "example": {
+                "problem": "Hitung bunga satu tahun dari Rp2.000.000 dengan bunga tunggal 6% per tahun.",
+                "steps": [
+                  "Ubah 6% menjadi 0,06",
+                  "Kalikan pokok × bunga: 2.000.000 × 0,06",
+                  "Hasil bunga satu tahun Rp120.000."
+                ],
+                "answer": "Rp120.000"
+              },
+              "check": {
+                "question": "Suku bunga 3% dalam desimal adalah ...",
+                "options": [
+                  "0,3",
+                  "0,03",
+                  "3"
+                ],
+                "correct": 1,
+                "feedback": "3 dibagi 100 sama dengan 0,03."
+              },
+              "trap": "Jangan lupa membagi persentase dengan 100 sebelum mengalikannya.",
+              "id": "2-1-1",
+              "code": "2.1.1"
+            },
+            {
+              "title": "Analisis bunga tunggal",
+              "subtopics": [
+                "mencari I",
+                "mencari A",
+                "mencari i atau n",
+                "menyelaraskan satuan"
+              ],
+              "explain": "Semua persoalan bunga tunggal dapat dimulai dari rumus I=P×i×n. Jika yang tidak diketahui tingkat bunganya, bagi kedua sisi dengan P×n. Jika tidak diketahui waktunya, bagi dengan P×i.",
+              "analogy": "Seperti resep makanan: jika tahu jumlah porsi dan bahan total, kamu dapat mencari bahan per porsi.",
+              "formula": "i = I/(P×n); n = I/(P×i), bila pembagi bukan nol.",
+              "example": {
+                "problem": "Bunga Rp60.000 diperoleh dari modal Rp500.000 selama 2 tahun. Berapa suku bunga tunggal per tahun?",
+                "steps": [
+                  "I=60.000, P=500.000, n=2 tahun",
+                  "i = 60.000/(500.000×2)=0,06",
+                  "Suku bunga per tahun = 6%."
+                ],
+                "answer": "6% per tahun"
+              },
+              "check": {
+                "question": "Bunga Rp20.000 dari modal Rp100.000 selama 2 tahun berarti bunga per tahun ...",
+                "options": [
+                  "10%",
+                  "20%",
+                  "5%"
+                ],
+                "correct": 0,
+                "feedback": "20.000/(100.000×2)=0,10=10% per tahun."
+              },
+              "trap": "Suku bunga tanpa satuan waktu belum cukup untuk dipakai menghitung.",
+              "id": "2-1-2",
+              "code": "2.1.2"
+            }
+          ],
+          "id": "2-1"
+        },
+        {
+          "title": "Investasi dengan Bunga Majemuk",
+          "goal": "Mengenali bunga berbunga dan pengaruh periode.",
+          "c4": "Apakah dua kali pertumbuhan 10% sama dengan sekali pertumbuhan 20%? Uji menggunakan modal Rp100.000.",
+          "lessons": [
+            {
+              "title": "Konsep bunga majemuk",
+              "subtopics": [
+                "bunga berbunga",
+                "faktor 1+i",
+                "perbedaan dengan bunga tunggal",
+                "rumus A"
+              ],
+              "explain": "Pada bunga majemuk, bunga periode pertama ditambahkan ke saldo. Periode berikutnya, bunga dihitung dari saldo baru tersebut. Karena itu, saldo sering tumbuh seperti barisan geometri.",
+              "analogy": "Tanaman yang setiap bulan tumbuh 10% dari ukurannya sekarang akan tumbuh makin besar dalam ukuran absolut.",
+              "formula": "A = P(1+i)^n, jika bunga diterapkan sekali tiap periode.",
+              "example": {
+                "problem": "Hitung nilai akhir Rp1.000.000 dengan bunga majemuk 10% per tahun selama 2 tahun.",
+                "steps": [
+                  "Tahun pertama: 1.000.000×1,10 = 1.100.000",
+                  "Tahun kedua: 1.100.000×1,10 = 1.210.000",
+                  "Rumus cepat: 1.000.000×(1,10)^2 = 1.210.000."
+                ],
+                "answer": "Rp1.210.000"
+              },
+              "check": {
+                "question": "Bunga periode kedua pada bunga majemuk dihitung dari ...",
+                "options": [
+                  "Pokok awal saja",
+                  "Saldo awal periode kedua",
+                  "Suku bunga tahun pertama saja"
+                ],
+                "correct": 1,
+                "feedback": "Bunga majemuk selalu menghitung dari saldo yang sudah mencakup bunga sebelumnya."
+              },
+              "trap": "Pada model sederhana ini belum diperhitungkan pajak, biaya administrasi, dan perubahan suku bunga.",
+              "id": "2-2-1",
+              "code": "2.2.1"
+            },
+            {
+              "title": "Analisis hasil investasi",
+              "subtopics": [
+                "menghitung hasil bersih bunga",
+                "membandingkan skenario",
+                "periode pemajemukan",
+                "memeriksa hasil"
+              ],
+              "explain": "Untuk membandingkan investasi, samakan nilai awal, satuan tingkat bunga, dan lamanya. Bunga majemuk dengan bunga nominal tahunan yang sama dapat menghasilkan hasil berbeda jika frekuensi pemajemukannya berbeda.",
+              "analogy": "Dua tabungan seperti dua tanaman yang disiram dengan jadwal berbeda; waktunya memengaruhi proses pertumbuhan.",
+              "formula": "A = P(1+j/m)^(mt) untuk bunga nominal j per tahun, m kali pemajemukan setahun, selama t tahun.",
+              "example": {
+                "problem": "Modal Rp1.000.000 mendapat 12% nominal per tahun dengan bunga dibukukan tiap bulan. Berapa nilai akhir setelah 2 bulan?",
+                "steps": [
+                  "Bunga tiap bulan = 12%/12 = 1% = 0,01",
+                  "Jumlah periode n=2 bulan",
+                  "A=1.000.000×(1,01)^2=Rp1.020.100."
+                ],
+                "answer": "Rp1.020.100"
+              },
+              "check": {
+                "question": "Bila bunga majemuk 1% per bulan selama 2 bulan, faktor pengalinya ...",
+                "options": [
+                  "1,01²",
+                  "1,02",
+                  "0,99²"
+                ],
+                "correct": 0,
+                "feedback": "Setiap bulan dikali 1,01, maka dua bulan dikali 1,01²."
+              },
+              "trap": "Perhatikan perbedaan tingkat bunga efektif dan nominal; jangan memakai 12% sebagai bunga tiap bulan.",
+              "id": "2-2-2",
+              "code": "2.2.2"
+            }
+          ],
+          "id": "2-2"
+        },
+        {
+          "title": "Investasi dengan Anuitas",
+          "goal": "Memahami setoran sama besar yang dilakukan berulang.",
+          "c4": "Jika menyetor uang setiap awal bulan dan setiap akhir bulan, mana yang berpotensi menghasilkan nilai akhir lebih besar dengan bunga positif?",
+          "lessons": [
+            {
+              "title": "Dasar anuitas investasi",
+              "subtopics": [
+                "setoran berkala R",
+                "akhir vs awal periode",
+                "nilai akhir",
+                "jumlah setoran"
+              ],
+              "explain": "Anuitas berarti pembayaran atau setoran dengan jumlah tetap pada setiap periode. Pada anuitas biasa, setoran masuk di akhir periode. Setoran awal periode mendapat tambahan satu periode bunga lebih lama, sehingga hasilnya sedikit lebih tinggi jika bunganya positif.",
+              "analogy": "Menaruh satu koin di celengan setiap akhir pekan berbeda dari membayar semua koin sekaligus di awal; uang yang lebih dulu disimpan bekerja lebih lama.",
+              "formula": "FV anuitas biasa = R[((1+i)^n−1)/i] untuk i ≠ 0; untuk i=0, FV=nR.",
+              "example": {
+                "problem": "Menabung Rp100.000 di akhir setiap tahun selama 2 tahun dengan bunga 10% per tahun. Berapa nilai akhirnya tepat setelah setoran kedua?",
+                "steps": [
+                  "Setoran tahun pertama berkembang 1 tahun menjadi 100.000×1,10=110.000",
+                  "Setoran tahun kedua baru masuk Rp100.000",
+                  "Jumlah nilai akhir = Rp210.000."
+                ],
+                "answer": "Rp210.000"
+              },
+              "check": {
+                "question": "Dalam anuitas biasa, setoran dilakukan pada ...",
+                "options": [
+                  "Awal periode",
+                  "Akhir periode",
+                  "Waktu acak"
+                ],
+                "correct": 1,
+                "feedback": "Anuitas biasa menggunakan setoran akhir setiap periode."
+              },
+              "trap": "Selalu jelaskan setoran dilakukan awal atau akhir periode; hasilnya berbeda.",
+              "id": "2-3-1",
+              "code": "2.3.1"
+            },
+            {
+              "title": "Perencanaan investasi berkala",
+              "subtopics": [
+                "target dana",
+                "menentukan setoran",
+                "simulasi tabel",
+                "nilai kini dan nilai masa depan"
+              ],
+              "explain": "Jika target tabungan diketahui, rumus anuitas bisa dibalik untuk mengetahui setoran tetap yang diperlukan. Dalam praktik belajar, tabel per periode sering lebih mudah dipahami daripada rumus yang panjang.",
+              "analogy": "Membagi target biaya wisata menjadi beberapa setoran tetap membuat rencana lebih terukur.",
+              "formula": "R = FV×i / [(1+i)^n−1] untuk anuitas biasa dan i ≠ 0.",
+              "example": {
+                "problem": "Target Rp300.000 setelah 3 bulan tanpa bunga. Berapa setoran tiap akhir bulan?",
+                "steps": [
+                  "Nilai target = 300.000 dan n=3",
+                  "Karena tidak ada bunga, cukup membagi 300.000 dengan 3",
+                  "Setoran setiap bulan = Rp100.000."
+                ],
+                "answer": "Rp100.000 per bulan"
+              },
+              "check": {
+                "question": "Untuk target Rp600.000 dalam 6 bulan tanpa bunga, setoran tetap per bulan ...",
+                "options": [
+                  "Rp60.000",
+                  "Rp100.000",
+                  "Rp120.000"
+                ],
+                "correct": 1,
+                "feedback": "600.000 ÷ 6 = Rp100.000."
+              },
+              "trap": "Jangan menyamakan jumlah semua setoran dengan nilai akhir saat ada bunga; ada tambahan hasil bunga.",
+              "id": "2-3-2",
+              "code": "2.3.2"
+            }
+          ],
+          "id": "2-3"
+        },
+        {
+          "title": "Pinjaman dengan Bunga Majemuk",
+          "goal": "Menjelaskan utang yang belum dilunasi dapat berkembang.",
+          "c4": "Mengapa menunda pembayaran utang berbunga majemuk dapat meningkatkan jumlah yang harus dibayar meskipun pokok awal tidak berubah?",
+          "lessons": [
+            {
+              "title": "Konsep pinjaman",
+              "subtopics": [
+                "pokok pinjaman",
+                "saldo kewajiban",
+                "tingkat bunga",
+                "pertumbuhan bila tanpa angsuran"
+              ],
+              "explain": "Pinjaman adalah uang yang diterima sekarang dan harus dikembalikan kemudian. Pada model bunga majemuk tanpa pembayaran selama periode tertentu, utang meningkat karena bunga masuk ke saldo kewajiban.",
+              "analogy": "Meminjam alat lalu dikenakan tambahan biaya setiap waktu menggambarkan mengapa durasi memengaruhi total yang ditanggung.",
+              "formula": "Saldo tanpa pembayaran A=P(1+i)^n.",
+              "example": {
+                "problem": "Pinjaman Rp500.000 memiliki bunga majemuk 10% per tahun dan belum dibayar 2 tahun. Berapa saldo teoretisnya?",
+                "steps": [
+                  "Tahun pertama 500.000×1,1=550.000",
+                  "Tahun kedua 550.000×1,1=605.000",
+                  "Saldo kewajiban = Rp605.000."
+                ],
+                "answer": "Rp605.000"
+              },
+              "check": {
+                "question": "Jika pokok utang Rp100.000 tumbuh 10% setahun tanpa pembayaran, saldo setahun kemudian ...",
+                "options": [
+                  "Rp90.000",
+                  "Rp110.000",
+                  "Rp100.000"
+                ],
+                "correct": 1,
+                "feedback": "10% dari 100.000 adalah 10.000 sehingga totalnya 110.000."
+              },
+              "trap": "Model sederhana ini belum memasukkan denda, biaya lain, atau peraturan kredit tertentu.",
+              "id": "2-4-1",
+              "code": "2.4.1"
+            },
+            {
+              "title": "Analisis biaya pinjaman",
+              "subtopics": [
+                "saldo setelah n periode",
+                "bandingkan suku bunga",
+                "dampak waktu",
+                "biaya total"
+              ],
+              "explain": "Biaya pinjaman bukan hanya angka cicilan bulanan. Untuk membandingkan, perhatikan jumlah pembayaran keseluruhan dan tambahan biaya yang mungkin dikenakan. Semakin lama utang dibiarkan bertumbuh, umumnya semakin tinggi kewajiban pada model majemuk.",
+              "analogy": "Harga barang dengan pembayaran cicilan harus dibandingkan dengan harga tunai menggunakan total biaya.",
+              "formula": "Biaya bunga teoretis = saldo akhir − pokok awal, untuk pinjaman tanpa pembayaran.",
+              "example": {
+                "problem": "Pinjaman Rp1.000.000 berbunga majemuk 5% per tahun selama 2 tahun tanpa pembayaran. Berapa bunga total?",
+                "steps": [
+                  "Saldo akhir = 1.000.000×1,05² = 1.102.500",
+                  "Kurangi pokok awal 1.000.000",
+                  "Bunga total = Rp102.500."
+                ],
+                "answer": "Rp102.500"
+              },
+              "check": {
+                "question": "Jika saldo akhir Rp1.210.000 dan pokok Rp1.000.000, selisih biaya bunga adalah ...",
+                "options": [
+                  "Rp210.000",
+                  "Rp121.000",
+                  "Rp21.000"
+                ],
+                "correct": 0,
+                "feedback": "1.210.000 − 1.000.000 = 210.000."
+              },
+              "trap": "Jangan membandingkan dua pinjaman hanya dari cicilan terendah: cek lama waktu dan total biaya.",
+              "id": "2-4-2",
+              "code": "2.4.2"
+            }
+          ],
+          "id": "2-4"
+        },
+        {
+          "title": "Pinjaman dengan Anuitas",
+          "goal": "Membedakan angsuran, bunga, dan pelunasan pokok.",
+          "c4": "Mengapa pada angsuran total yang tetap, bagian bunga cenderung turun dari bulan ke bulan?",
+          "lessons": [
+            {
+              "title": "Sistem angsuran anuitas",
+              "subtopics": [
+                "angsuran tetap R",
+                "bunga periodik",
+                "angsuran pokok",
+                "sisa utang"
+              ],
+              "explain": "Dalam sistem anuitas dengan tingkat bunga tetap, total pembayaran per periode sama. Namun isinya berubah: ketika utang masih besar, bunga juga besar; setelah utang berkurang, bagian bunga mengecil dan bagian pelunasan pokok membesar.",
+              "analogy": "Membayar biaya sewa alat dan mencicil harga alat dalam satu tagihan: sebagian tagihan adalah biaya, sebagian mengurangi utang.",
+              "formula": "R = Pi / [1−(1+i)^(−n)] untuk i ≠ 0; bunga periode = saldo awal × i.",
+              "example": {
+                "problem": "Saldo utang Rp1.000.000 dengan bunga 1% per bulan; angsuran bulanan tetap Rp350.000. Berapa pokok yang terbayar bulan pertama?",
+                "steps": [
+                  "Bunga bulan pertama = 1%×1.000.000 = 10.000",
+                  "Dari angsuran Rp350.000, Rp10.000 digunakan membayar bunga",
+                  "Pelunasan pokok = 350.000−10.000 = Rp340.000."
+                ],
+                "answer": "Rp340.000 pokok terbayar"
+              },
+              "check": {
+                "question": "Jika angsuran Rp500.000 terdiri dari bunga Rp75.000, pengurangan pokok adalah ...",
+                "options": [
+                  "Rp575.000",
+                  "Rp425.000",
+                  "Rp75.000"
+                ],
+                "correct": 1,
+                "feedback": "Angsuran pokok = 500.000−75.000 = 425.000."
+              },
+              "trap": "Contoh angsuran Rp350.000 di atas hanya ilustrasi pemecahan komponen, bukan klaim cicilan lunas sesuai rumus untuk tenor tertentu.",
+              "id": "2-5-1",
+              "code": "2.5.1"
+            },
+            {
+              "title": "Tabel amortisasi",
+              "subtopics": [
+                "saldo awal",
+                "bunga angsuran",
+                "pengurangan pokok",
+                "saldo akhir",
+                "pelunasan"
+              ],
+              "explain": "Tabel amortisasi menunjukkan perjalanan utang dari periode ke periode. Empat kolom utama adalah saldo awal, bunga, pokok yang dilunasi, dan saldo akhir. Saldo akhir satu periode menjadi saldo awal periode berikutnya.",
+              "analogy": "Seperti buku kas kelas: setiap pembayaran dicatat agar sisa kewajiban diketahui.",
+              "formula": "Pokok terbayar = angsuran−bunga; saldo akhir = saldo awal−pokok terbayar.",
+              "example": {
+                "problem": "Saldo awal Rp600.000, bunga bulan ini 2%, dan dibayar Rp212.000. Tentukan saldo akhir.",
+                "steps": [
+                  "Bunga = 600.000×0,02 = 12.000",
+                  "Pokok yang terbayar = 212.000−12.000 = 200.000",
+                  "Saldo akhir = 600.000−200.000 = Rp400.000."
+                ],
+                "answer": "Rp400.000"
+              },
+              "check": {
+                "question": "Sisa utang awal Rp500.000, pokok yang terbayar Rp120.000, saldo akhir ...",
+                "options": [
+                  "Rp380.000",
+                  "Rp620.000",
+                  "Rp500.000"
+                ],
+                "correct": 0,
+                "feedback": "Kurangi 500.000 dengan 120.000."
+              },
+              "trap": "Selalu periksa: saldo akhir tidak boleh bertambah jika bunga sudah tercakup dan pembayaran lebih besar daripada bunga.",
+              "id": "2-5-2",
+              "code": "2.5.2"
+            }
+          ],
+          "id": "2-5"
+        },
+        {
+          "title": "Pengaruh Parameter Investasi dan Pinjaman",
+          "goal": "Menguji apa yang terjadi ketika suatu asumsi diubah.",
+          "c4": "Dua kredit memiliki cicilan bulanan berbeda. Mengapa cicilan bulanan yang lebih rendah belum tentu lebih murah secara total?",
+          "lessons": [
+            {
+              "title": "Analisis perubahan parameter",
+              "subtopics": [
+                "parameter bunga",
+                "parameter periode",
+                "frekuensi setoran",
+                "perbandingan grafik"
+              ],
+              "explain": "Parameter adalah angka yang bisa diubah dalam model, misalnya tingkat bunga dan lama waktu. Untuk mempelajari pengaruh suatu parameter, ubah satu hal saja sementara hal lain dibuat sama. Cara ini mencegah kesimpulan yang keliru.",
+              "analogy": "Dalam eksperimen memasak, jika rasa berubah saat gula dan garam sama-sama diganti, sulit mengetahui penyebabnya.",
+              "formula": "Pada bunga majemuk A=P(1+i)^n, i dan n memengaruhi A.",
+              "example": {
+                "problem": "Modal Rp1.000.000 selama 1 tahun. Bandingkan bunga majemuk 5% dan 10%, masing-masing dibukukan setahun sekali.",
+                "steps": [
+                  "Jika 5%, A=1.000.000×1,05=Rp1.050.000",
+                  "Jika 10%, A=1.000.000×1,10=Rp1.100.000",
+                  "Selisih Rp50.000, dengan asumsi lain sama."
+                ],
+                "answer": "Selisih Rp50.000"
+              },
+              "check": {
+                "question": "Untuk membandingkan dampak bunga secara adil, apa yang harus dijaga sama?",
+                "options": [
+                  "Modal awal dan durasi",
+                  "Warna grafik",
+                  "Nama bank"
+                ],
+                "correct": 0,
+                "feedback": "Modal dan durasi harus sama agar yang berubah hanya tingkat bunga."
+              },
+              "trap": "Hasil model tidak sama dengan kepastian hasil produk keuangan nyata.",
+              "id": "2-6-1",
+              "code": "2.6.1"
+            },
+            {
+              "title": "Pengambilan keputusan finansial",
+              "subtopics": [
+                "bunga dan biaya tambahan",
+                "total cicilan",
+                "inflasi dasar",
+                "asumsi dan risiko"
+              ],
+              "explain": "Keputusan finansial memerlukan pertanyaan lebih luas daripada “berapa bunganya”. Perhatikan biaya layanan, lama kontrak, kemampuan membayar, kemungkinan perubahan tingkat bunga, dan nilai uang dari waktu ke waktu. Model matematika membantu, tetapi tidak menggantikan penilaian risiko.",
+              "analogy": "Dua toko menawarkan cicilan: yang satu cicilannya kecil tapi lebih lama, sehingga jumlah akhirnya bisa lebih besar.",
+              "formula": "Total pembayaran = jumlah seluruh cicilan + biaya lain yang tidak termasuk cicilan.",
+              "example": {
+                "problem": "Pilihan A: 10 cicilan Rp120.000. Pilihan B: 12 cicilan Rp105.000. Tanpa biaya lain, mana lebih kecil?",
+                "steps": [
+                  "Total A = 10×120.000 = 1.200.000",
+                  "Total B = 12×105.000 = 1.260.000",
+                  "A lebih murah Rp60.000 meskipun cicilan per bulannya lebih besar."
+                ],
+                "answer": "Pilihan A, selisih Rp60.000"
+              },
+              "check": {
+                "question": "Yang harus dibandingkan saat menilai biaya kredit adalah ...",
+                "options": [
+                  "Cicilan per bulan saja",
+                  "Total pembayaran dan persyaratan",
+                  "Warna brosur"
+                ],
+                "correct": 1,
+                "feedback": "Lihat biaya total beserta syarat pembayarannya."
+              },
+              "trap": "Materi ini untuk literasi matematika, bukan rekomendasi transaksi atau pinjaman tertentu.",
+              "id": "2-6-2",
+              "code": "2.6.2"
+            }
+          ],
+          "id": "2-6"
+        }
+      ],
+      "id": "bab-2"
+    },
+    {
+      "title": "Kaidah Pencacahan",
+      "overview": "Berapa banyak cara memilih pakaian, menyusun kode, mengatur kursi, atau membentuk kepanitiaan? Kita dapat menghitungnya tanpa menuliskan satu per satu.",
+      "essential": "Mulailah dengan bertanya: apakah kita memilih salah satu cara, melakukan beberapa tahap, menyusun urutan, atau hanya memilih anggota?",
+      "project": "Proyek 3 · Sistem pengaturan panitia dan jadwal",
+      "project_steps": [
+        "Data beberapa jabatan panitia dan calon pengurus (tanpa data pribadi sensitif).",
+        "Tentukan jumlah cara ketika jabatan berbeda dan ketika hanya memilih anggota.",
+        "Buat tabel atau skrip sederhana untuk menampilkan beberapa kemungkinan.",
+        "Jelaskan kapan menggunakan permutasi dan kapan kombinasi."
+      ],
+      "image": "https://images.unsplash.com/photo-1714403160710-9fd8e2206b33?auto=format&fit=crop&w=1400&q=82",
+      "credit": "Foto One Pixel / Unsplash",
+      "sections": [
+        {
+          "title": "Aturan Pengisian Tempat",
+          "goal": "Menghitung cara tanpa harus mendaftar satu per satu.",
+          "c4": "Kantin menawarkan dua jenis nasi atau tiga jenis mi untuk satu menu. Sementara itu, satu paket harus memilih satu nasi dan satu minuman. Mengapa cara hitungnya berbeda?",
+          "lessons": [
+            {
+              "title": "Aturan penjumlahan",
+              "subtopics": [
+                "pilihan alternatif",
+                "kelompok saling terpisah",
+                "diagram kemungkinan",
+                "contoh transportasi"
+              ],
+              "explain": "Aturan penjumlahan dipakai ketika kita memilih salah satu dari beberapa kelompok pilihan yang tidak tumpang tindih. Kata kuncinya adalah “atau”. Jika tersedia 3 jenis jus atau 2 jenis teh dan kita memilih satu minuman, ada 5 pilihan.",
+              "analogy": "Di perpustakaan ada 4 novel atau 3 komik untuk dipinjam satu saja; jumlah pilihan 7.",
+              "formula": "Banyak pilihan total = pilihan A + pilihan B, bila keduanya tidak beririsan.",
+              "example": {
+                "problem": "Ada 4 rute bus atau 3 rute kereta, dan seseorang hanya memilih salah satu rute. Berapa alternatif?",
+                "steps": [
+                  "Ada 4 pilihan bus",
+                  "Ada 3 pilihan kereta dan kelompoknya berbeda",
+                  "Jumlah alternatif = 4 + 3 = 7."
+                ],
+                "answer": "7 alternatif"
+              },
+              "check": {
+                "question": "Pilih satu: 5 jenis kue atau 2 jenis buah. Banyak pilihan ...",
+                "options": [
+                  "7",
+                  "10",
+                  "3"
+                ],
+                "correct": 0,
+                "feedback": "Kata “atau” menunjukkan pilihan alternatif: 5+2=7."
+              },
+              "trap": "Jika suatu pilihan masuk dua kategori sekaligus, perlu menghindari penghitungan ganda.",
+              "id": "3-1-1",
+              "code": "3.1.1"
+            },
+            {
+              "title": "Aturan perkalian",
+              "subtopics": [
+                "pilihan berurutan",
+                "diagram pohon",
+                "pasangan",
+                "slot pilihan"
+              ],
+              "explain": "Aturan perkalian digunakan jika satu keputusan terdiri atas beberapa tahap yang semuanya dilakukan. Kata kuncinya adalah “dan”. Jika 3 baju bisa dipasangkan dengan 2 celana, setiap baju memiliki 2 pasangan sehingga total 6.",
+              "analogy": "Memilih baju DAN celana: yang dihitung bukan jenis baju saja, melainkan seluruh pasangan.",
+              "formula": "Total cara = cara tahap 1 × cara tahap 2 × ... .",
+              "example": {
+                "problem": "Ada 3 pilihan roti dan 2 pilihan minuman. Berapa paket berbeda jika setiap paket berisi keduanya?",
+                "steps": [
+                  "Setiap roti dapat dipasangkan dengan 2 minuman",
+                  "Ada 3 jenis roti",
+                  "Total 3×2 = 6 paket."
+                ],
+                "answer": "6 paket"
+              },
+              "check": {
+                "question": "Jika 4 topi bisa dipasangkan dengan 3 kaus, jumlah pasangan ...",
+                "options": [
+                  "7",
+                  "12",
+                  "1"
+                ],
+                "correct": 1,
+                "feedback": "Setiap topi punya tiga pasangan, jadi 4×3=12."
+              },
+              "trap": "Gunakan perkalian hanya jika semua tahapan dilakukan, bukan hanya memilih salah satu.",
+              "id": "3-1-2",
+              "code": "3.1.2"
+            }
+          ],
+          "id": "3-1"
+        },
+        {
+          "title": "Faktorial dan Permutasi",
+          "goal": "Memahami jumlah susunan ketika posisi penting.",
+          "c4": "Ada 3 kandidat untuk jabatan ketua, sekretaris, dan bendahara. Apakah memilih kelompok 3 orang sama dengan menentukan tiga jabatan itu?",
+          "lessons": [
+            {
+              "title": "Konsep faktorial",
+              "subtopics": [
+                "arti n!",
+                "0!",
+                "urutan perkalian",
+                "penyederhanaan"
+              ],
+              "explain": "Faktorial adalah perkalian bilangan bulat positif berurutan sampai 1. Misalnya 4! = 4×3×2×1 = 24. Faktorial sering dipakai karena jumlah pilihan berkurang setelah satu posisi terisi. Secara definisi 0! = 1.",
+              "analogy": "Menyusun tiga buku berbeda: buku pertama punya 3 pilihan, berikutnya tinggal 2, terakhir 1.",
+              "formula": "n! = n×(n−1)×...×2×1; 0! = 1.",
+              "example": {
+                "problem": "Hitung 5!/3!.",
+                "steps": [
+                  "Tuliskan 5!=5×4×3!",
+                  "Coret faktor 3! di atas dan di bawah",
+                  "Hasil = 5×4 = 20."
+                ],
+                "answer": "20"
+              },
+              "check": {
+                "question": "Nilai 4! adalah ...",
+                "options": [
+                  "16",
+                  "24",
+                  "12"
+                ],
+                "correct": 1,
+                "feedback": "4×3×2×1 = 24."
+              },
+              "trap": "Tanda ! dalam matematika ini bukan tanda seru biasa; ia memiliki arti faktorial.",
+              "id": "3-2-1",
+              "code": "3.2.1"
+            },
+            {
+              "title": "Permutasi unsur berbeda",
+              "subtopics": [
+                "arti urutan",
+                "memilih r dari n",
+                "rumus nPr",
+                "contoh jabatan"
+              ],
+              "explain": "Permutasi menghitung susunan ketika urutan atau jabatan membuat hasil berbeda. Pasangan (Ani, Budi) sebagai ketua-sekretaris berbeda dari (Budi, Ani). Jika mengambil r orang dari n calon, pilihan posisi pertama lebih banyak daripada posisi berikutnya.",
+              "analogy": "Juara 1 dan juara 2 tidak dapat saling ditukar tanpa mengubah hasil lomba.",
+              "formula": "nPr = n!/(n−r)! untuk 0≤r≤n.",
+              "example": {
+                "problem": "Dari 4 calon, berapa susunan berbeda untuk ketua dan wakil?",
+                "steps": [
+                  "Ketua dapat dipilih dengan 4 cara",
+                  "Sesudah ketua dipilih, wakil tersisa 3 cara",
+                  "Total = 4×3 = 12 = 4P2."
+                ],
+                "answer": "12 susunan"
+              },
+              "check": {
+                "question": "Pilih ketua dan sekretaris dari 3 orang, banyak susunan ...",
+                "options": [
+                  "3",
+                  "6",
+                  "9"
+                ],
+                "correct": 1,
+                "feedback": "3 pilihan ketua × 2 pilihan sekretaris = 6."
+              },
+              "trap": "Jika jabatan berbeda, urutan orang penting. Jangan memakai kombinasi.",
+              "id": "3-2-2",
+              "code": "3.2.2"
+            }
+          ],
+          "id": "3-2"
+        },
+        {
+          "title": "Permutasi dengan Unsur yang Sama",
+          "goal": "Menghindari susunan yang sebetulnya identik.",
+          "c4": "Mengapa 4 huruf pada kata MAMA tidak memiliki 4! susunan berbeda?",
+          "lessons": [
+            {
+              "title": "Prinsip pengulangan unsur identik",
+              "subtopics": [
+                "objek identik",
+                "perhitungan ganda",
+                "faktor pembagi",
+                "rumus permutasi unsur sama"
+              ],
+              "explain": "Jika ada beberapa benda sama persis, menukarnya tidak menghasilkan susunan baru. Karena itu hasil n! harus dibagi dengan faktorial banyaknya benda yang sama pada setiap kelompok.",
+              "analogy": "Dua kaus putih yang benar-benar identik ditukar posisi tidak menciptakan susunan tampilan yang baru.",
+              "formula": "Jumlah susunan = n!/(a!b!c!...) untuk kelompok unsur identik.",
+              "example": {
+                "problem": "Berapa susunan berbeda huruf AAB?",
+                "steps": [
+                  "Tanpa huruf sama: 3! = 6",
+                  "Huruf A muncul 2 kali, sehingga dibagi 2!",
+                  "Jumlah = 6/2 = 3: AAB, ABA, BAA."
+                ],
+                "answer": "3 susunan"
+              },
+              "check": {
+                "question": "Susunan berbeda huruf AA ada ...",
+                "options": [
+                  "1",
+                  "2",
+                  "4"
+                ],
+                "correct": 0,
+                "feedback": "Menukar dua A tidak menimbulkan susunan baru."
+              },
+              "trap": "Penghitungan harus memperhatikan kelompok huruf/benda identik satu per satu.",
+              "id": "3-3-1",
+              "code": "3.3.1"
+            },
+            {
+              "title": "Penerapan permutasi unsur sama",
+              "subtopics": [
+                "susunan huruf",
+                "warna sama",
+                "syarat tambahan",
+                "cek daftar"
+              ],
+              "explain": "Untuk soal berbentuk kata, catat dulu banyak huruf dan berapa kali setiap huruf muncul. Setelah itu gunakan rumus dan, bila jumlah kecil, buat daftar susunan untuk memeriksa hasil.",
+              "analogy": "Menyusun kelereng dengan warna merah, merah, biru menghasilkan tiga tampilan: MMB, MBM, BMM.",
+              "formula": "n!/(a!b!...), dengan n jumlah seluruh unsur.",
+              "example": {
+                "problem": "Berapa susunan berbeda huruf pada kata MAMA?",
+                "steps": [
+                  "Ada 4 huruf: M dua kali dan A dua kali",
+                  "Jumlah = 4!/(2!×2!)",
+                  "Hasil 24/(2×2) = 6 susunan."
+                ],
+                "answer": "6 susunan"
+              },
+              "check": {
+                "question": "Susunan dari BBBB adalah ...",
+                "options": [
+                  "1",
+                  "4",
+                  "24"
+                ],
+                "correct": 0,
+                "feedback": "Semua unsur sama sehingga hanya ada satu susunan unik."
+              },
+              "trap": "Tanda faktor pembagi untuk MAMA adalah 2!×2!, bukan 2+2.",
+              "id": "3-3-2",
+              "code": "3.3.2"
+            }
+          ],
+          "id": "3-3"
+        },
+        {
+          "title": "Permutasi Siklis",
+          "goal": "Menghitung susunan pada lingkaran secara tepat.",
+          "c4": "Empat orang duduk melingkar. Mengapa memutar seluruh kursi bersama-sama tidak dianggap susunan baru dalam model dasar?",
+          "lessons": [
+            {
+              "title": "Konsep susunan melingkar",
+              "subtopics": [
+                "susunan melingkar",
+                "rotasi setara",
+                "mematok satu posisi",
+                "rumus siklis"
+              ],
+              "explain": "Di meja bundar, susunan yang hanya diputar bersama memiliki urutan tetangga sama. Untuk menghindari penghitungan berulang, tetapkan satu orang sebagai patokan lalu atur orang lainnya. Jika ada n orang berbeda, hasilnya (n−1)!.",
+              "analogy": "Bayangkan gelang huruf: memutar gelang tidak mengubah siapa bertetangga dengan siapa.",
+              "formula": "Permutasi siklis = (n−1)! untuk n objek berbeda, bila putaran dianggap sama.",
+              "example": {
+                "problem": "Berapa cara menempatkan 4 orang berbeda di meja bundar?",
+                "steps": [
+                  "Tetapkan satu orang untuk menghilangkan rotasi ganda",
+                  "Sisa 3 orang dapat disusun 3! cara",
+                  "Hasil 3×2×1 = 6."
+                ],
+                "answer": "6 cara"
+              },
+              "check": {
+                "question": "Tiga orang duduk melingkar memiliki susunan dasar sebanyak ...",
+                "options": [
+                  "2",
+                  "3",
+                  "6"
+                ],
+                "correct": 0,
+                "feedback": "(3−1)! = 2! = 2."
+              },
+              "trap": "Asumsi putaran setara berbeda dengan kasus kursi bernomor tetap; jelaskan konteksnya.",
+              "id": "3-4-1",
+              "code": "3.4.1"
+            },
+            {
+              "title": "Permutasi siklis berkondisi",
+              "subtopics": [
+                "harus berdampingan",
+                "tidak berdampingan",
+                "metode blok",
+                "memeriksa syarat"
+              ],
+              "explain": "Jika dua orang harus berdampingan, anggap keduanya satu blok terlebih dahulu. Atur blok itu bersama orang lain di lingkaran. Terakhir hitung berapa cara menukar posisi dua orang di dalam blok.",
+              "analogy": "Dua teman yang selalu duduk berdampingan dipandang sebagai satu pasangan saat mengatur kelompok.",
+              "formula": "Untuk n orang melingkar, dua orang tertentu berdampingan: 2×(n−2)! (n≥3).",
+              "example": {
+                "problem": "Empat orang A, B, C, D duduk melingkar, A dan B harus berdampingan. Berapa susunan?",
+                "steps": [
+                  "Gabungkan A-B sebagai satu blok",
+                  "Ada 3 objek melingkar: blok, C, dan D → (3−1)! = 2",
+                  "A-B dapat ditukar menjadi B-A: ×2 sehingga total 4."
+                ],
+                "answer": "4 susunan"
+              },
+              "check": {
+                "question": "Jika dua orang tertentu wajib berdampingan, langkah pertama yang mudah adalah ...",
+                "options": [
+                  "Menggabungkan menjadi satu blok",
+                  "Menghapus satu orang",
+                  "Menggunakan kombinasi tanpa urutan"
+                ],
+                "correct": 0,
+                "feedback": "Blok membantu memenuhi syarat kedekatan secara sistematis."
+              },
+              "trap": "Untuk syarat “tidak berdampingan”, sering lebih mudah: semua susunan − susunan berdampingan.",
+              "id": "3-4-2",
+              "code": "3.4.2"
+            }
+          ],
+          "id": "3-4"
+        },
+        {
+          "title": "Kombinasi",
+          "goal": "Mengenali masalah pemilihan yang tidak memperhatikan urutan.",
+          "c4": "Tim A berisi Ani, Budi, Cici. Apakah tim ini menjadi tim berbeda jika nama anggota ditulis Cici, Ani, Budi?",
+          "lessons": [
+            {
+              "title": "Konsep kombinasi",
+              "subtopics": [
+                "memilih anggota",
+                "urutan tidak penting",
+                "rumus nCr",
+                "beda kombinasi-permutasi"
+              ],
+              "explain": "Kombinasi digunakan saat hanya isi kelompok yang penting. Memilih Ani dan Budi sama dengan memilih Budi dan Ani. Untuk menghapus susunan ulang yang sebenarnya sama, permutasi dibagi dengan r!.",
+              "analogy": "Isi keranjang dua apel yang sama tidak berubah hanya karena urutan mengambilnya ditukar.",
+              "formula": "nCr = n!/[r!(n−r)!], untuk 0≤r≤n.",
+              "example": {
+                "problem": "Dari 4 siswa pilih 2 sebagai peserta lomba tanpa jabatan. Berapa kelompok?",
+                "steps": [
+                  "Hitung 4C2 = 4!/(2!×2!)",
+                  "Sederhanakan = (4×3)/(2×1)",
+                  "Hasil = 6 kelompok."
+                ],
+                "answer": "6 kelompok"
+              },
+              "check": {
+                "question": "Memilih 2 anggota dari 3 siswa tanpa jabatan menghasilkan ...",
+                "options": [
+                  "3 kelompok",
+                  "6 kelompok",
+                  "9 kelompok"
+                ],
+                "correct": 0,
+                "feedback": "3C2 = 3, yaitu AB, AC, dan BC."
+              },
+              "trap": "Jangan memakai permutasi ketika urutan nama tidak mengubah kelompok.",
+              "id": "3-5-1",
+              "code": "3.5.1"
+            },
+            {
+              "title": "Penerapan kombinasi",
+              "subtopics": [
+                "pemilihan tim",
+                "panitia berkriteria",
+                "gabungan kelompok",
+                "syarat pilihan"
+              ],
+              "explain": "Soal kombinasi dapat mencakup syarat, misalnya harus memilih dua anggota dari kelompok A dan satu anggota dari B. Pisahkan dulu pilihan setiap kelompok, hitung kombinasi masing-masing, lalu kalikan karena semua syarat harus dipenuhi.",
+              "analogy": "Memilih 2 siswa kelas A dan 1 siswa kelas B berbeda dari mengurutkan ketiganya di panggung.",
+              "formula": "Jika syarat bersamaan: total = C(n₁,r₁)×C(n₂,r₂).",
+              "example": {
+                "problem": "Pilih 2 siswa dari 4 laki-laki dan 1 siswa dari 3 perempuan. Berapa kelompok?",
+                "steps": [
+                  "Pilih 2 dari 4: 4C2=6",
+                  "Pilih 1 dari 3: 3C1=3",
+                  "Kedua pilihan harus dilakukan: 6×3 = 18."
+                ],
+                "answer": "18 kelompok"
+              },
+              "check": {
+                "question": "Pilih 1 siswa dari 5 orang: 5C1 = ...",
+                "options": [
+                  "1",
+                  "5",
+                  "120"
+                ],
+                "correct": 1,
+                "feedback": "Ada lima calon yang masing-masing dapat menjadi satu anggota terpilih."
+              },
+              "trap": "Perhatikan kata “dan” antar-kriteria: jumlah cara tiap kriteria dikalikan, bukan dijumlah.",
+              "id": "3-5-2",
+              "code": "3.5.2"
+            }
+          ],
+          "id": "3-5"
+        },
+        {
+          "title": "Penerapan Permutasi dan Kombinasi",
+          "goal": "Memilih teknik berdasar makna masalah.",
+          "c4": "Dalam sebuah kelas ada pemilihan 3 anggota tim dan pemilihan ketua-wakil-sekretaris. Keduanya menggunakan 3 orang. Mengapa jumlah kemungkinannya berbeda?",
+          "lessons": [
+            {
+              "title": "Identifikasi strategi pencacahan",
+              "subtopics": [
+                "apakah urutan penting",
+                "pernyataan soal",
+                "aturan campuran",
+                "cek duplikasi"
+              ],
+              "explain": "Langkah paling penting dalam pencacahan adalah menerjemahkan cerita menjadi pertanyaan: memilih alternatif, melakukan tahap, menyusun posisi, atau memilih anggota? Daripada langsung mencari rumus, tuliskan dua hasil contoh dan tanyakan apakah mereka dianggap berbeda.",
+              "analogy": "“Ani ketua, Budi wakil” berbeda dengan “Budi ketua, Ani wakil”; tetapi tim {Ani,Budi} sama saja.",
+              "formula": "Urutan penting → permutasi; urutan tak penting → kombinasi.",
+              "example": {
+                "problem": "Dari 5 orang, apakah menghitung 2 jabatan (ketua dan wakil) memakai 5P2 atau 5C2?",
+                "steps": [
+                  "Dua jabatan mempunyai peran berbeda",
+                  "Menukar orang di kedua jabatan menciptakan hasil berbeda",
+                  "Gunakan 5P2=5×4=20."
+                ],
+                "answer": "5P2 = 20"
+              },
+              "check": {
+                "question": "Memilih 3 anggota tim dari 7 siswa tanpa jabatan memakai ...",
+                "options": [
+                  "7P3",
+                  "7C3",
+                  "7!"
+                ],
+                "correct": 1,
+                "feedback": "Karena urutan anggota tim tidak penting, gunakan kombinasi."
+              },
+              "trap": "Rumus yang benar dipilih dari makna masalah, bukan dari sekadar angka n dan r.",
+              "id": "3-6-1",
+              "code": "3.6.1"
+            },
+            {
+              "title": "Masalah pencacahan kontekstual",
+              "subtopics": [
+                "jadwal kegiatan",
+                "kombinasi menu",
+                "susunan acara",
+                "syarat tidak berulang"
+              ],
+              "explain": "Masalah nyata sering menggabungkan beberapa aturan. Pecah menjadi tahap-tahap kecil, cari jumlah cara setiap tahap, dan cek apakah suatu pilihan boleh digunakan lebih dari sekali. Jika tidak boleh, jumlah pilihan tahap berikutnya berkurang.",
+              "analogy": "Kode dua angka dari 1,2,3 tanpa pengulangan: setelah memilih angka pertama, hanya dua angka tersisa.",
+              "formula": "Tanpa pengulangan: n×(n−1) untuk dua posisi dari n simbol.",
+              "example": {
+                "problem": "Berapa kode dua digit berbeda yang dapat dibuat dari angka 1, 2, 3, 4?",
+                "steps": [
+                  "Digit pertama memiliki 4 pilihan",
+                  "Digit kedua harus berbeda, tersisa 3 pilihan",
+                  "Jumlah = 4×3 = 12 kode."
+                ],
+                "answer": "12 kode"
+              },
+              "check": {
+                "question": "Kode dua huruf dari A, B, C tanpa pengulangan berjumlah ...",
+                "options": [
+                  "3",
+                  "6",
+                  "9"
+                ],
+                "correct": 1,
+                "feedback": "Pilihan pertama 3; kedua 2; total 3×2 = 6."
+              },
+              "trap": "Syarat “boleh berulang” mengubah hasil menjadi n×n untuk dua posisi.",
+              "id": "3-6-2",
+              "code": "3.6.2"
+            }
+          ],
+          "id": "3-6"
+        }
+      ],
+      "id": "bab-3"
+    },
+    {
+      "title": "Peluang",
+      "overview": "Saat melempar koin atau dadu, kita tidak bisa memastikan hasil berikutnya. Namun, kita tetap dapat menghitung seberapa mungkin sebuah kejadian terjadi.",
+      "essential": "Peluang adalah ukuran kemungkinan, bukan jaminan hasil. Seluruh model teoretis perlu menjelaskan asumsi, terutama apakah semua hasil sama mungkin.",
+      "project": "Proyek 4 · Apakah permainan kita adil?",
+      "project_steps": [
+        "Rancang permainan kelas yang memakai dua koin atau satu dadu.",
+        "Tulis seluruh kemungkinan hasil dan peluang menang tiap pemain.",
+        "Lakukan atau simulasikan minimal 100 percobaan lalu catat frekuensi.",
+        "Bandingkan peluang teoretis dengan frekuensi relatif dan usulkan perubahan aturan agar lebih adil."
+      ],
+      "image": "https://images.unsplash.com/photo-1597591406871-b57baac13802?auto=format&fit=crop&w=1400&q=82",
+      "credit": "Foto Zhuo Cheng you / Unsplash",
+      "sections": [
+        {
+          "title": "Percobaan Acak dan Ruang Sampel",
+          "goal": "Menjelaskan hasil yang mungkin sebelum menghitung peluang.",
+          "c4": "Dua kali melempar koin memiliki empat urutan hasil. Mengapa hasil A-G berbeda dari G-A meskipun sama-sama satu angka dan satu gambar?",
+          "lessons": [
+            {
+              "title": "Konsep percobaan acak",
+              "subtopics": [
+                "hasil percobaan",
+                "kejadian",
+                "ruang sampel",
+                "titik sampel"
+              ],
+              "explain": "Percobaan acak adalah kegiatan yang hasil pastinya belum diketahui sebelum dilakukan, meskipun daftar hasil yang mungkin bisa dijelaskan. Ruang sampel (S) memuat semua hasil; kejadian A adalah kumpulan hasil yang ingin diperhatikan.",
+              "analogy": "Ketika memutar roda undian, kamu tidak tahu angka yang berhenti, tetapi tahu daftar angka yang tercantum.",
+              "formula": "S = kumpulan semua hasil mungkin; A adalah bagian dari S.",
+              "example": {
+                "problem": "Sebuah dadu enam sisi bernomor 1 sampai 6 dilempar. Tentukan S dan kejadian A: keluar angka genap.",
+                "steps": [
+                  "Ruang sampel S={1,2,3,4,5,6}",
+                  "Angka genap dari daftar itu: 2, 4, 6",
+                  "Jadi A={2,4,6}."
+                ],
+                "answer": "S={1,2,3,4,5,6} dan A={2,4,6}"
+              },
+              "check": {
+                "question": "Ruang sampel untuk satu koin biasa adalah ...",
+                "options": [
+                  "{angka, gambar}",
+                  "{1,2,3}",
+                  "{angka saja}"
+                ],
+                "correct": 0,
+                "feedback": "Satu koin memiliki dua sisi: angka dan gambar."
+              },
+              "trap": "Ruang sampel harus mencakup semua hasil yang mungkin, bukan hanya hasil yang diharapkan.",
+              "id": "4-1-1",
+              "code": "4.1.1"
+            },
+            {
+              "title": "Menentukan ruang sampel",
+              "subtopics": [
+                "metode daftar",
+                "diagram pohon",
+                "tabel pasangan",
+                "jumlah hasil"
+              ],
+              "explain": "Jika ada dua percobaan, catat hasil sebagai pasangan terurut. Diagram pohon membantu memastikan tidak ada hasil yang terlewat. Pada dua koin, pasangan A-G dan G-A termasuk hasil berbeda apabila urutan lemparan diperhatikan.",
+              "analogy": "Memilih baju lalu celana bisa digambar sebagai cabang: tiap baju bercabang ke semua pilihan celana.",
+              "formula": "Untuk percobaan bertahap independen dengan m dan n hasil, total pasangan m×n.",
+              "example": {
+                "problem": "Dua koin A/G dilempar. Berapa titik sampel dan apa saja?",
+                "steps": [
+                  "Koin pertama: A atau G",
+                  "Untuk setiap hasil, koin kedua: A atau G",
+                  "Daftar lengkap: AA, AG, GA, GG — empat hasil."
+                ],
+                "answer": "4 titik sampel: AA, AG, GA, GG"
+              },
+              "check": {
+                "question": "Dua dadu enam sisi memiliki banyak pasangan hasil ...",
+                "options": [
+                  "12",
+                  "36",
+                  "6"
+                ],
+                "correct": 1,
+                "feedback": "Enam kemungkinan dadu pertama × enam kemungkinan dadu kedua = 36."
+              },
+              "trap": "Dalam pasangan hasil, urutan sering penting; jangan langsung menggabungkan AG dan GA.",
+              "id": "4-1-2",
+              "code": "4.1.2"
+            }
+          ],
+          "id": "4-1"
+        },
+        {
+          "title": "Peluang Suatu Kejadian",
+          "goal": "Menerjemahkan banyak hasil menjadi ukuran kemungkinan.",
+          "c4": "Apakah peluang muncul angka 6 pada dadu adalah 1/6 karena ada enam sisi saja, atau ada asumsi yang harus disebut?",
+          "lessons": [
+            {
+              "title": "Konsep peluang",
+              "subtopics": [
+                "angka 0 hingga 1",
+                "kejadian pasti dan mustahil",
+                "hasil sama mungkin",
+                "persentase peluang"
+              ],
+              "explain": "Peluang adalah ukuran kemungkinan. Nilai 0 berarti mustahil dan nilai 1 berarti pasti. Jika semua hasil sama mungkin, peluang suatu kejadian diperoleh dengan membandingkan banyak hasil yang memenuhi kejadian terhadap seluruh hasil.",
+              "analogy": "Dalam kantong ada 2 kelereng merah dan 3 biru yang serupa ukuran; peluang merah lebih kecil karena pilihannya lebih sedikit.",
+              "formula": "0 ≤ P(A) ≤ 1; bila sama mungkin, P(A)=n(A)/n(S).",
+              "example": {
+                "problem": "Sebuah kantong berisi 2 bola merah dan 3 bola biru yang identik ukurannya. Berapa peluang mengambil merah?",
+                "steps": [
+                  "Jumlah bola seluruhnya = 2+3=5",
+                  "Ada 2 hasil merah dari 5 bola",
+                  "P(merah)=2/5=0,4=40%."
+                ],
+                "answer": "2/5 atau 40%"
+              },
+              "check": {
+                "question": "Peluang kejadian yang pasti adalah ...",
+                "options": [
+                  "0",
+                  "1",
+                  "1/2"
+                ],
+                "correct": 1,
+                "feedback": "Peluang 1 berarti kejadian itu selalu terjadi dalam model."
+              },
+              "trap": "Rumus banyak hasil dibagi total hanya sah bila hasil-hasil dasar sama mungkin.",
+              "id": "4-2-1",
+              "code": "4.2.1"
+            },
+            {
+              "title": "Peluang dan komplemen",
+              "subtopics": [
+                "kejadian bukan A",
+                "rumus komplemen",
+                "peluang tidak terjadi",
+                "penggunaan untuk kasus banyak"
+              ],
+              "explain": "Komplemen A berarti “semua hasil selain A”. Karena sebuah hasil pasti masuk A atau bukan A, total kedua peluang itu 1. Cara komplemen berguna saat menghitung “setidaknya satu” karena kebalikannya “tidak ada sama sekali” mungkin lebih mudah.",
+              "analogy": "Jika peluang hujan menurut model 30%, peluang tidak hujan pada saat yang sama adalah 70%.",
+              "formula": "P(bukan A) = 1 − P(A).",
+              "example": {
+                "problem": "Pada dadu biasa, peluang muncul 6 adalah 1/6. Berapa peluang tidak muncul 6?",
+                "steps": [
+                  "P(muncul 6)=1/6",
+                  "P(tidak muncul 6)=1−1/6",
+                  "Hasil 5/6."
+                ],
+                "answer": "5/6"
+              },
+              "check": {
+                "question": "Jika P(A)=0,25, maka P(bukan A)= ...",
+                "options": [
+                  "0,75",
+                  "0,25",
+                  "1,25"
+                ],
+                "correct": 0,
+                "feedback": "1−0,25=0,75."
+              },
+              "trap": "Komplemen bukan lawan yang asal dipilih: ia harus mencakup semua hasil di luar A.",
+              "id": "4-2-2",
+              "code": "4.2.2"
+            }
+          ],
+          "id": "4-2"
+        },
+        {
+          "title": "Frekuensi Harapan",
+          "goal": "Menghubungkan perhitungan peluang dengan percobaan.",
+          "c4": "Jika peluang teoretis suatu kejadian adalah 1/2 dan percobaan dilakukan 10 kali, apakah pasti muncul tepat lima kali?",
+          "lessons": [
+            {
+              "title": "Peluang eksperimental",
+              "subtopics": [
+                "frekuensi kejadian",
+                "frekuensi relatif",
+                "peluang teoretis",
+                "fluktuasi sampel"
+              ],
+              "explain": "Peluang teoretis dihitung dari model. Peluang eksperimental diperoleh dengan membagi banyak kejadian yang benar-benar muncul dengan banyak percobaan. Pada jumlah percobaan kecil, hasil eksperimental bisa berbeda cukup jauh dari nilai teoretis.",
+              "analogy": "Melempar koin 10 kali bisa menghasilkan 7 angka dan 3 gambar, meski pada koin seimbang peluang masing-masing 1/2.",
+              "formula": "Frekuensi relatif = banyak kemunculan / total percobaan.",
+              "example": {
+                "problem": "Koin dilempar 20 kali; sisi angka muncul 12 kali. Berapa frekuensi relatif angka?",
+                "steps": [
+                  "Banyak muncul angka=12",
+                  "Total percobaan=20",
+                  "Frekuensi relatif=12/20=0,6=60%."
+                ],
+                "answer": "0,6 atau 60%"
+              },
+              "check": {
+                "question": "Jika merah muncul 15 kali dari 50 pengambilan, frekuensi relatifnya ...",
+                "options": [
+                  "0,3",
+                  "0,5",
+                  "3"
+                ],
+                "correct": 0,
+                "feedback": "15÷50=0,3."
+              },
+              "trap": "Frekuensi relatif dari 20 percobaan bukan bukti bahwa peluang teoretis selalu 0,6.",
+              "id": "4-3-1",
+              "code": "4.3.1"
+            },
+            {
+              "title": "Frekuensi harapan kejadian",
+              "subtopics": [
+                "hasil rata-rata yang diharapkan",
+                "rumus nP",
+                "perbedaan ramalan dan jaminan",
+                "perbandingan data"
+              ],
+              "explain": "Frekuensi harapan adalah banyak kemunculan yang diperkirakan secara rata-rata jika sebuah percobaan dilakukan berulang. Nilainya tidak selalu sama dengan hasil aktual dari satu rangkaian percobaan.",
+              "analogy": "Jika rata-rata satu dari empat pelanggan membeli produk, dari 100 pengunjung kita mengharapkan sekitar 25 pembeli, bukan menjamin tepat 25.",
+              "formula": "Frekuensi harapan Fh = n × P(A).",
+              "example": {
+                "problem": "Dadu seimbang dilempar 60 kali. Berapa frekuensi harapan muncul angka 6?",
+                "steps": [
+                  "P(angka 6)=1/6",
+                  "Jumlah percobaan n=60",
+                  "Fh=60×1/6=10."
+                ],
+                "answer": "10 kali (harapan)"
+              },
+              "check": {
+                "question": "Peluang 1/4 untuk 40 percobaan memberi frekuensi harapan ...",
+                "options": [
+                  "4",
+                  "10",
+                  "20"
+                ],
+                "correct": 1,
+                "feedback": "40×1/4 = 10."
+              },
+              "trap": "Frekuensi harapan bukan kepastian hasil percobaan yang sebenarnya.",
+              "id": "4-3-2",
+              "code": "4.3.2"
+            }
+          ],
+          "id": "4-3"
+        },
+        {
+          "title": "Peluang Kejadian Majemuk",
+          "goal": "Memahami peristiwa yang melibatkan dua syarat atau lebih.",
+          "c4": "Pada dadu, kejadian genap dan lebih dari 3 mempunyai irisan. Mengapa peluang “genap atau >3” tidak cukup menjumlahkan keduanya?",
+          "lessons": [
+            {
+              "title": "Gabungan dan irisan kejadian",
+              "subtopics": [
+                "A atau B",
+                "A dan B",
+                "diagram Venn",
+                "rumus gabungan umum"
+              ],
+              "explain": "Gabungan A∪B berarti hasil termasuk A atau B atau keduanya. Irisan A∩B berarti hasil memenuhi dua syarat sekaligus. Jika langsung menjumlahkan P(A) dan P(B), hasil irisan terhitung dua kali, sehingga perlu dikurangi sekali.",
+              "analogy": "Siswa yang ikut klub musik atau klub olahraga bisa tergabung di kedua klub; jangan dihitung sebagai dua orang.",
+              "formula": "P(A∪B)=P(A)+P(B)−P(A∩B).",
+              "example": {
+                "problem": "Pada dadu, A={2,4,6} dan B={4,5,6}. Berapa P(A∪B)?",
+                "steps": [
+                  "P(A)=3/6",
+                  "P(B)=3/6",
+                  "Irisan A∩B={4,6} sehingga P(irisan)=2/6",
+                  "P(gabungan)=3/6+3/6−2/6=4/6=2/3."
+                ],
+                "answer": "2/3"
+              },
+              "check": {
+                "question": "Simbol A∩B berarti ...",
+                "options": [
+                  "A atau B",
+                  "A dan B sekaligus",
+                  "Bukan A"
+                ],
+                "correct": 1,
+                "feedback": "Irisan adalah hasil yang masuk ke A sekaligus B."
+              },
+              "trap": "Pernyataan “atau” pada matematika biasanya juga mencakup hasil yang memenuhi keduanya.",
+              "id": "4-4-1",
+              "code": "4.4.1"
+            },
+            {
+              "title": "Analisis kejadian majemuk",
+              "subtopics": [
+                "tabel dua arah",
+                "peluang irisan",
+                "gabungan",
+                "menafsirkan kata dan atau"
+              ],
+              "explain": "Soal data dapat disajikan dalam tabel. Untuk peluang dari sebuah populasi, penyebutnya adalah jumlah seluruh objek yang dijadikan ruang sampel. “Dan” menunjukkan sel persilangan dua kategori; “atau” menunjukkan penggabungan kategori.",
+              "analogy": "Catatan perpustakaan membedakan siswa kelas XI/XII dan suka novel/komik; sel satu kategori dapat dibaca sebagai irisan.",
+              "formula": "P(A∩B)=jumlah anggota yang memenuhi keduanya / jumlah seluruh anggota, jika tiap anggota sama mungkin dipilih.",
+              "example": {
+                "problem": "Dari 20 siswa, 8 suka sepak bola, 7 suka bulu tangkis, dan 3 suka keduanya. Berapa yang suka minimal salah satu?",
+                "steps": [
+                  "Jumlah sepak bola =8",
+                  "Jumlah bulu tangkis=7",
+                  "Kurangi yang terhitung dua kali: 8+7−3=12 siswa."
+                ],
+                "answer": "12 siswa"
+              },
+              "check": {
+                "question": "Jika 6 orang suka A, 5 suka B, 2 suka keduanya, yang suka A atau B ada ...",
+                "options": [
+                  "11",
+                  "9",
+                  "3"
+                ],
+                "correct": 1,
+                "feedback": "6+5−2=9."
+              },
+              "trap": "Jangan menjumlahkan dua kelompok tanpa mengecek apakah ada anggota yang masuk keduanya.",
+              "id": "4-4-2",
+              "code": "4.4.2"
+            }
+          ],
+          "id": "4-4"
+        },
+        {
+          "title": "Kejadian Saling Lepas",
+          "goal": "Mengenali kejadian yang tidak mungkin bersamaan.",
+          "c4": "Pada satu lemparan dadu, apakah muncul angka genap dan muncul angka ganjil bisa terjadi sekaligus? Bagaimana dengan muncul angka genap dan lebih dari 3?",
+          "lessons": [
+            {
+              "title": "Konsep kejadian saling lepas",
+              "subtopics": [
+                "irisan kosong",
+                "perbedaan dengan bebas",
+                "aturan gabungan khusus",
+                "contoh dadu"
+              ],
+              "explain": "Dua kejadian saling lepas tidak dapat terjadi secara bersamaan pada satu percobaan. Contohnya, dalam satu lemparan dadu, hasil 1 dan hasil 6 tidak mungkin muncul sekaligus. Karena irisannya nol, peluang gabungan cukup dijumlahkan.",
+              "analogy": "Satu tiket bernomor hanya dapat memiliki satu nomor pemenang utama dalam satu pengundian.",
+              "formula": "Jika A∩B=∅, P(A∪B)=P(A)+P(B).",
+              "example": {
+                "problem": "Pada dadu biasa, peluang muncul 1 atau 6 adalah ...",
+                "steps": [
+                  "P(1)=1/6",
+                  "P(6)=1/6 dan keduanya tidak dapat muncul bersama",
+                  "P(1 atau 6)=1/6+1/6=2/6=1/3."
+                ],
+                "answer": "1/3"
+              },
+              "check": {
+                "question": "Kejadian muncul angka 2 dan angka 5 pada satu lemparan dadu bersifat ...",
+                "options": [
+                  "Saling lepas",
+                  "Selalu bersama",
+                  "Saling bergantung secara positif"
+                ],
+                "correct": 0,
+                "feedback": "Satu dadu tidak mungkin sekaligus menunjukkan 2 dan 5."
+              },
+              "trap": "Saling lepas tidak sama dengan saling bebas; kedua konsep memiliki arti berbeda.",
+              "id": "4-5-1",
+              "code": "4.5.1"
+            },
+            {
+              "title": "Penerapan kejadian saling lepas",
+              "subtopics": [
+                "kategori tidak beririsan",
+                "model satu percobaan",
+                "rumus penjumlahan",
+                "pemeriksaan total"
+              ],
+              "explain": "Periksa dahulu apakah dua hasil mungkin bersamaan. Pada satu pengambilan kartu, kartu tidak bisa sekaligus menjadi hati dan sekop. Maka keduanya saling lepas pada satu kartu. Namun aturan akan berbeda jika mengambil beberapa kartu.",
+              "analogy": "Memilih satu menu sebagai makanan atau minuman tanpa kategori tumpang tindih memakai logika penjumlahan.",
+              "formula": "Jika saling lepas: P(A∪B)=P(A)+P(B) dan hasil ≤1.",
+              "example": {
+                "problem": "Kotak berisi 4 bola merah, 3 biru, dan 3 hijau. Peluang mengambil merah atau biru dalam satu kali pengambilan?",
+                "steps": [
+                  "Total bola=10",
+                  "Merah dan biru tak mungkin terjadi sekaligus pada satu bola",
+                  "P=4/10+3/10=7/10."
+                ],
+                "answer": "7/10"
+              },
+              "check": {
+                "question": "Satu kartu dari 52 kartu standar: peluang hati atau sekop adalah ...",
+                "options": [
+                  "1/2",
+                  "1/4",
+                  "1/13"
+                ],
+                "correct": 0,
+                "feedback": "Ada 13 kartu hati dan 13 sekop; (13+13)/52=1/2."
+              },
+              "trap": "Periksa apakah ruang sampel satu pengambilan atau beberapa pengambilan.",
+              "id": "4-5-2",
+              "code": "4.5.2"
+            }
+          ],
+          "id": "4-5"
+        },
+        {
+          "title": "Kejadian Saling Bebas",
+          "goal": "Memahami kejadian satu tidak mengubah peluang yang lain.",
+          "c4": "Mengapa hasil lemparan koin pertama tidak mengubah peluang hasil lemparan koin kedua pada dua lemparan koin ideal?",
+          "lessons": [
+            {
+              "title": "Konsep independensi",
+              "subtopics": [
+                "arti saling bebas",
+                "peluang irisan",
+                "beda bebas dan lepas",
+                "percobaan ulang"
+              ],
+              "explain": "Saling bebas berarti informasi tentang kejadian pertama tidak mengubah peluang kejadian kedua. Dua lemparan koin ideal merupakan contoh. Jika dua kejadian bebas, peluang keduanya terjadi diperoleh dengan perkalian peluang masing-masing.",
+              "analogy": "Kondisi cuaca hari ini tidak memengaruhi sisi sebuah koin ideal yang dilempar di dalam kelas.",
+              "formula": "Jika A dan B bebas, P(A∩B)=P(A)×P(B).",
+              "example": {
+                "problem": "Dua koin seimbang dilempar. Berapa peluang keduanya menunjukkan angka?",
+                "steps": [
+                  "P(angka koin pertama)=1/2",
+                  "P(angka koin kedua)=1/2 dan bebas",
+                  "P(keduanya angka)=1/2×1/2=1/4."
+                ],
+                "answer": "1/4"
+              },
+              "check": {
+                "question": "Dua lemparan koin seimbang yang terpisah dianggap ...",
+                "options": [
+                  "Saling bebas",
+                  "Pasti sama hasil",
+                  "Saling lepas"
+                ],
+                "correct": 0,
+                "feedback": "Hasil pertama tidak mengubah peluang hasil kedua."
+              },
+              "trap": "Dua kejadian yang saling lepas dan sama-sama berpeluang positif justru tidak bebas.",
+              "id": "4-6-1",
+              "code": "4.6.1"
+            },
+            {
+              "title": "Penerapan kejadian saling bebas",
+              "subtopics": [
+                "koin dan dadu",
+                "pemilihan dengan pengembalian",
+                "diagram pohon",
+                "uji independensi"
+              ],
+              "explain": "Pengambilan dengan pengembalian dapat menghasilkan percobaan independen ketika komposisi benda kembali seperti semula dan proses pengambilannya acak. Jika tanpa pengembalian, isi kantong berubah sehingga peluang tahap berikutnya biasanya ikut berubah.",
+              "analogy": "Ambil kelereng, lihat warnanya, lalu kembalikan dan aduk lagi: peluang pada percobaan kedua tetap sama.",
+              "formula": "P(A dan B)=P(A)P(B) untuk peristiwa bebas.",
+              "example": {
+                "problem": "Kantong berisi 2 bola merah dan 3 biru. Ambil satu bola, kembalikan, lalu ambil lagi. Peluang dua kali merah?",
+                "steps": [
+                  "P(merah setiap pengambilan)=2/5",
+                  "Karena dikembalikan dan diacak, peluang kedua tetap 2/5",
+                  "P(keduanya merah)=2/5×2/5=4/25."
+                ],
+                "answer": "4/25"
+              },
+              "check": {
+                "question": "Dua kali pengambilan dengan pengembalian dari kantong yang komposisinya tetap cenderung ...",
+                "options": [
+                  "Bebas",
+                  "Saling lepas",
+                  "Pasti sama"
+                ],
+                "correct": 0,
+                "feedback": "Pengembalian menjaga kondisi peluang dasar setiap percobaan."
+              },
+              "trap": "Tanpa pengembalian, peluang langkah kedua tidak sama karena jumlah benda dalam kantong berubah.",
+              "id": "4-6-2",
+              "code": "4.6.2"
+            }
+          ],
+          "id": "4-6"
+        },
+        {
+          "title": "Peluang Bersyarat",
+          "goal": "Menghitung peluang setelah mendapat informasi tambahan.",
+          "c4": "Diketahui sebuah kartu yang diambil adalah kartu merah. Apakah peluang kartu hati masih 13/52? Mengapa ruang sampelnya berubah?",
+          "lessons": [
+            {
+              "title": "Konsep peluang bersyarat",
+              "subtopics": [
+                "informasi B sudah terjadi",
+                "ruang sampel baru",
+                "notasi P(A|B)",
+                "rumus kondisional"
+              ],
+              "explain": "Peluang bersyarat mengukur peluang A ketika kita sudah mengetahui B terjadi. Artinya, ruang sampel dipersempit hanya pada hasil B. Dari hasil B itulah kita menghitung bagian yang juga memenuhi A.",
+              "analogy": "Jika tahu seseorang sudah masuk perpustakaan, peluang dia meminjam buku dihitung dari pengunjung perpustakaan, bukan dari semua siswa sekolah.",
+              "formula": "P(A|B)=P(A∩B)/P(B), untuk P(B)>0.",
+              "example": {
+                "problem": "Dari 10 siswa, 6 perempuan dan 4 laki-laki. Di antara 6 perempuan, 2 memakai kacamata. Jika diketahui siswa yang dipilih perempuan, peluang berkacamata?",
+                "steps": [
+                  "Informasi “perempuan” membatasi ruang sampel menjadi 6 siswa",
+                  "Dari 6 siswa ini, 2 berkacamata",
+                  "P(kacamata | perempuan)=2/6=1/3."
+                ],
+                "answer": "1/3"
+              },
+              "check": {
+                "question": "Jika diketahui siswa terpilih berasal dari 8 anggota klub dan 3 di antaranya juara, peluang juara adalah ...",
+                "options": [
+                  "3/8",
+                  "3/20",
+                  "8/3"
+                ],
+                "correct": 0,
+                "feedback": "Penyebutnya kini 8 anggota klub yang sudah diketahui."
+              },
+              "trap": "Peluang bersyarat membutuhkan penyebut P(B)>0 dan tidak selalu sama dengan peluang awal P(A).",
+              "id": "4-7-1",
+              "code": "4.7.1"
+            },
+            {
+              "title": "Penerapan peluang bersyarat",
+              "subtopics": [
+                "pengambilan tanpa pengembalian",
+                "tabel dua arah",
+                "diagram pohon",
+                "hubungan dengan bebas"
+              ],
+              "explain": "Tanpa pengembalian, hasil pengambilan pertama memengaruhi komposisi benda sebelum pengambilan kedua. Cara sederhana adalah memperbarui jumlah benda dan jumlah total pada langkah kedua. Diagram pohon membantu menuliskan percabangan dengan jelas.",
+              "analogy": "Dari kotak 3 kelereng merah dan 2 biru, setelah satu merah diambil tanpa dikembalikan, sekarang tersisa 2 merah dari 4.",
+              "formula": "P(A dan B)=P(A)×P(B|A), jika P(A)>0.",
+              "example": {
+                "problem": "Kotak berisi 3 merah dan 2 biru. Dua bola diambil berturut-turut tanpa pengembalian. Berapa peluang keduanya merah?",
+                "steps": [
+                  "P(merah pertama)=3/5",
+                  "Setelah merah pertama keluar, tersisa 2 merah dari 4 bola → P(merah kedua|pertama merah)=2/4",
+                  "P(keduanya merah)=3/5×2/4=3/10."
+                ],
+                "answer": "3/10"
+              },
+              "check": {
+                "question": "Setelah mengambil 1 merah dari 3 merah dan 2 biru tanpa pengembalian, peluang merah berikutnya ...",
+                "options": [
+                  "3/5",
+                  "2/4",
+                  "2/5"
+                ],
+                "correct": 1,
+                "feedback": "Sekarang jumlah merah 2 dan total 4."
+              },
+              "trap": "Kesalahan umum: tetap memakai 3/5 pada pengambilan kedua yang tanpa pengembalian.",
+              "id": "4-7-2",
+              "code": "4.7.2"
+            }
+          ],
+          "id": "4-7"
+        },
+        {
+          "title": "Simulasi dan Pengambilan Keputusan",
+          "goal": "Menilai model dengan data dan menyadari ketidakpastian.",
+          "c4": "Dua permainan sama-sama menawarkan peluang menang 1/2. Apakah keduanya pasti menghasilkan pemenang seimbang setelah hanya empat putaran?",
+          "lessons": [
+            {
+              "title": "Simulasi probabilitas",
+              "subtopics": [
+                "percobaan nyata",
+                "simulasi spreadsheet",
+                "frekuensi relatif",
+                "jumlah ulangan"
+              ],
+              "explain": "Simulasi menjalankan percobaan berulang untuk membandingkan hasil dengan teori. Kita bisa memakai koin nyata atau rumus acak pada spreadsheet. Simulasi sangat berguna untuk melihat variasi: dua kelompok dengan aturan sama dapat memperoleh hasil berbeda.",
+              "analogy": "Di kelas, dua kelompok melempar koin masing-masing 20 kali; persentase angka mereka tidak harus sama.",
+              "formula": "Frekuensi relatif = jumlah kejadian ÷ jumlah percobaan.",
+              "example": {
+                "problem": "Dari 100 lemparan koin, 53 menghasilkan angka. Bandingkan dengan peluang teori 1/2.",
+                "steps": [
+                  "Frekuensi relatif angka=53/100=0,53",
+                  "Peluang teoretis angka=1/2=0,50",
+                  "Perbedaannya 0,03 atau 3 poin persentase."
+                ],
+                "answer": "Frekuensi relatif 53%; teori 50%"
+              },
+              "check": {
+                "question": "Apakah 50 percobaan koin seimbang selalu menghasilkan tepat 25 angka?",
+                "options": [
+                  "Ya",
+                  "Tidak",
+                  "Hanya jika memakai kalkulator"
+                ],
+                "correct": 1,
+                "feedback": "Hasil percobaan acak bisa menyimpang dari nilai harapan."
+              },
+              "trap": "Simulasi tidak membuktikan kepastian satu hasil; ia membantu memahami pola jangka panjang.",
+              "id": "4-8-1",
+              "code": "4.8.1"
+            },
+            {
+              "title": "Penalaran dan evaluasi probabilitas",
+              "subtopics": [
+                "kekeliruan peluang",
+                "keadilan permainan",
+                "asumsi model",
+                "keputusan berbasis risiko"
+              ],
+              "explain": "Dalam permainan adil sederhana, kedua pemain memiliki kesempatan menang yang sama menurut aturan. Untuk menilai keadilan, hitung dulu peluang semua hasil, kemudian lihat apakah aturan membagi peluang itu secara seimbang. Perbedaan hasil beberapa putaran tidak otomatis berarti permainan curang.",
+              "analogy": "Jika satu sisi koin muncul lima kali berturut-turut, lemparan berikutnya pada koin ideal tetap punya peluang 1/2 untuk masing-masing sisi.",
+              "formula": "Pada koin ideal, P(angka pada lemparan berikutnya)=1/2 terlepas dari urutan sebelumnya.",
+              "example": {
+                "problem": "Permainan: pemain A menang jika dadu menunjukkan 1 atau 2; pemain B menang jika 3,4,5,6. Apakah adil?",
+                "steps": [
+                  "P(A)=2/6=1/3",
+                  "P(B)=4/6=2/3",
+                  "Karena peluang B dua kali peluang A, permainan tidak adil bila hadiah dan syarat sama."
+                ],
+                "answer": "Tidak adil; B mempunyai peluang 2/3"
+              },
+              "check": {
+                "question": "Lima kali angka pada koin ideal membuat peluang gambar berikutnya ...",
+                "options": [
+                  "Lebih besar dari 1/2",
+                  "Tetap 1/2",
+                  "Menjadi 0"
+                ],
+                "correct": 1,
+                "feedback": "Pada lemparan independen, sejarah tidak mengubah peluang lemparan berikutnya."
+              },
+              "trap": "Jangan menyimpulkan “sudah lama tidak muncul, berarti sekarang pasti muncul”; itu kekeliruan penjudi.",
+              "id": "4-8-2",
+              "code": "4.8.2"
+            }
+          ],
+          "id": "4-8"
+        }
+      ],
+      "id": "bab-4"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Matematika untuk SMA/MA/SMK/MAK Kelas XII, Edisi Revisi 2025 (Kemendikdasmen)",
+      "url": "https://buku.kemendikdasmen.go.id/katalog/matematika-untuk-smamasmkmak-kelas-xii-edisi-revisi"
+    },
+    {
+      "name": "Buku Siswa Kelas XII Revisi 2025 (PDF)",
+      "url": "https://static.sc.cloudapp.web.id/content/pdf/bukuteks/kurikulum21/Matematika_BS_KLS_XII_Rev.pdf"
+    },
+    {
+      "name": "Panduan Mata Pelajaran Matematika Fase A–F (Kemendikdasmen, 2025)",
+      "url": "https://repositori.kemendikdasmen.go.id/33608/"
+    },
+    {
+      "name": "Lisensi Unsplash",
+      "url": "https://unsplash.com/license"
+    }
+  ],
+  "photos": [
+    {
+      "credit": "CHUTTERSNAP",
+      "url": "https://unsplash.com/de/fotos/bucher-im-bucherregal-b2Rmlyz7n3I"
+    },
+    {
+      "credit": "Jakub Żerdzicki",
+      "url": "https://unsplash.com/photos/a-person-sitting-at-a-desk-with-a-calculator-and-a-notebook-LNnmSumlwO4"
+    },
+    {
+      "credit": "One Pixel",
+      "url": "https://unsplash.com/fr/photos/une-rangee-de-crayons-de-couleur-alignes-sur-un-fond-blanc-47JLCB-ZL_0"
+    },
+    {
+      "credit": "Zhuo Cheng you",
+      "url": "https://unsplash.com/photos/white-dice-on-brown-wooden-table-2WE_V_dh0B0"
+    }
+  ]
+}
